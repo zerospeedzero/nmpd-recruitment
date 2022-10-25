@@ -12,8 +12,7 @@ export const TypesData = [
             'The ARTIST type lives in the space between the inner and outer worlds, and your gift is the ability to powerfully manifest what’s inside of you. That’s not always an easy task, but with it comes the capacity to create works that speak to others on a deep level and inspire new ways of seeing the world.',
             'With your love of beauty and your connection to the senses, you have a strong aesthetic orientation and you crave well-designed environments. Whatever creative field you end up pursuing, you tend to work best on your own and crave the independence that lets you freely follow your creative impulses. You’re at home in a state of flow—easily becoming so engrossed in whatever project you’re working on that you lose all sense of time and space.',
             'Your biggest challenge is working through creative blocks stemming from your emotional nature. You know well that in the “war of art,” fear and self-doubt are your biggest enemies. Practice diplomacy instead of waging war, and you’ll learn to turn enemies into trusted allies pointing you in the direction of creative greatness; in other words, listening to your fear can tell you exactlywhat you need to do.',
-            'Together, the ARTIST and the PRODUCER form a powerful creative duo with the vision and drive to manifest ideas on a large scale. Seek out collaborations with the dynamic and pragmatic PRODUCER to amplify your impact and take your projects across the finish line.'],
-        NMPD_programmes: ["Rich media, Visual communication, "]
+            'Together, the ARTIST and the PRODUCER form a powerful creative duo with the vision and drive to manifest ideas on a large scale. Seek out collaborations with the dynamic and pragmatic PRODUCER to amplify your impact and take your projects across the finish line.']
     },
     {
         id: 'thinker',
