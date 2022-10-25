@@ -1,0 +1,30 @@
+.LandingBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  transform: translate(0, -50%);
+}
+
+.LandingVideo {
+  width: 100%;
+}
+
+.LandingHeader {
+  font-size: 1rem;
+}
+
+.LandingButton {
+  border: 1px solid black;
+  padding: 0.8rem 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .LandingVideo {
+    width: 800px;
+  }
+}

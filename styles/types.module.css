@@ -1,0 +1,32 @@
+.Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 100%;
+  flex: 25%;
+  max-height: 50vh;
+  overflow: hidden;
+}
+
+.Video {
+  height: 50vh;
+  opacity: 0;
+  margin-top: 30vh;
+}
+@media screen and (max-width: 500px) {
+  .Col {
+    flex: 50%;
+    max-height: 25vh;
+  }
+
+  .Video {
+    height: 25vh;
+  }
+}
