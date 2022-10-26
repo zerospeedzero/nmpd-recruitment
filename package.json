@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && next build",
-    "start": "export NODE_OPTIONS=--openssl-legacy-provider && NODE_ENV=production node server.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
