@@ -1,8 +1,28 @@
 import styles from '../styles/home.module.css'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import useTranslation from "next-translate/useTranslation"
+// import { useRouter } from 'next/router'
 
+// export async function getStaticProps({locale}) {
+//   let greeting = 
+//     locale === "en-US" 
+//     ? "Hello world" 
+//     : locale === "zh-HK" 
+//     ? "Hallo Welt" 
+//     : locale === "tl-PH" 
+//     ? "Bonjour le monde" 
+//     : ""
+//   return {
+//     props: {
+//       greeting,
+//     }
+//   }
+// }
+
+// export default function Home(props) {
 export default function Home() {
+  let { t } = useTranslation()
   const variants = {
     initial: { opacity:0 },
     animate: {
@@ -27,6 +47,8 @@ export default function Home() {
   return (
     <>
       <div className={styles.LandingBanner}>
+        {/* <h1>{props.greeting}</h1> */}
+        <h1>{t("common:greeting")}</h1>
         <motion.video
           variants={variants}
           initial='initial'
@@ -41,7 +63,7 @@ export default function Home() {
           initial='initial'
           animate='animate'
           className={styles.LandingHeader}>
-          Discover your creative personality
+          {t("common:discover")}
         </motion.h1>
         <Link href='/test' passHref>
           <motion.a
@@ -49,7 +71,7 @@ export default function Home() {
             initial='initial'
             animate='animate'
             className={styles.LandingButton}>
-            Start Test
+            {t("common:start_test")}
           </motion.a>
         </Link>
       </div>

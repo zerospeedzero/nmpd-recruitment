@@ -3,10 +3,13 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { TypesData } from './TypesData'
 import { motion } from 'framer-motion'
+import useTranslation from "next-translate/useTranslation"
+import ReactCountryFlag from "react-country-flag"
 
 export default function Header() {
     const router = useRouter()
-
+    let { t } = useTranslation()
+    // Show language selection
     const variants = {
         initial: { opacity:0, y: '-3rem' },
         animate: {
@@ -34,13 +37,33 @@ export default function Header() {
             style={type?{backgroundImage: `linear-gradient(${type.bgColor},${type.bgColor},rgba(255,255,255,0))`}:{}}
             className={styles.Header}>
             <Link href={router.route == '/about'? '/test': '/about'} passHref>
-                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className={styles.Link}>
-                    {router.route == '/about'? `Take the Test`: `About`}
+                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}">
+                    {router.route == '/about'? `Take the Test`: t("common:about")}
                 </a>
             </Link>
+            <div>
+                <Link href={router.asPath} locale="en-US" >
+                    <label><ReactCountryFlag className={styles.flag} countryCode="US" svg title="USA"/></label>
+                </Link>
+                <Link href={router.asPath} locale="zh-HK">
+                    <label><ReactCountryFlag className={styles.flag} countryCode="HK" svg title="Hong Kong"/></label>
+                </Link>
+                <Link href={router.asPath} locale="zh-CN">
+                    <label><ReactCountryFlag className={styles.flag} countryCode="CN" svg title="China"/></label>
+                </Link>
+                <Link href={router.asPath} locale="zgh-MA">
+                    <label><ReactCountryFlag className={styles.flag} countryCode="MA" svg title="Morocco"/></label>
+                </Link>
+                <Link href={router.asPath} locale="es-MX">
+                    <label><ReactCountryFlag className={styles.flag} countryCode="MX" svg title="Mexico"/></label>
+                </Link>
+                <Link href={router.asPath} locale="tl-PH">
+                    <label><ReactCountryFlag className={styles.flag} countryCode="PH" svg title="Philippines"/></label>
+                </Link>
+            </div>
             <Link href={router.route == '/types'? '/test': '/types'} passHref>
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className={styles.Link}>
-                    {router.route == '/types'? `Take the Test`: `The Types`}
+                    {router.route == '/types'? `Take the Test`: t("common:the_types") }
                 </a>
             </Link>
         </motion.div>

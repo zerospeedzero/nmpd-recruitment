@@ -1,12 +1,16 @@
 import { TestData } from "./TestData"
+// import { TestData } from "http://dev.saitnewmedia.ca/~gcheng/nmpd_recruitment/data/TestData.js"
+
 import { useState, useEffect } from "react"
 import styles from '../styles/test.module.css'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import * as MdIcons from 'react-icons/md'
+import useTranslation from "next-translate/useTranslation"
 
 export default function Test() {
     const router = useRouter()
+    let { t } = useTranslation()
 
     const [i,setI] = useState(0)
     const [score,setScore] = useState(555)
@@ -53,7 +57,7 @@ export default function Test() {
         }
     }, [vidSource])
     
-    if (i == 15) {
+    if (i == 6 ) {
         if ( intel < 5 ) {
             if ( dream < 5 ) {
                 if ( extro < 5) {
@@ -127,7 +131,7 @@ export default function Test() {
                     transition={{duration: 1}}
                     className={styles.TextRow}>
                     <div className={styles.Question}>
-                        {TestData[i].question}
+                        {t("test:" + TestData[i].question)}
                     </div> 
                 </motion.div>}
                 { width < 500 ? <motion.div
@@ -169,7 +173,8 @@ export default function Test() {
                             className={styles.Answer}
                             animate={answer == 1 ? {backgroundColor: 'white', color: TestData[i].bgColor} : null}
                             transition={{duration: 1}}>
-                            {TestData[i].answer1[0]}
+                            {/* {TestData[i].answer1[0]} */}
+                            {t("test:" + TestData[i].answer1[0])}
                         </motion.button> :
                         <button
                             className={styles.Answer}
@@ -177,14 +182,16 @@ export default function Test() {
                                 setAnswer(1)
                                 setScore(score + TestData[i].answer1[1])
                                 setVidSource(TestData[i].answer1[2])}}>
-                            {TestData[i].answer1[0]}
+                            {/* {TestData[i].answer1[0]} */}
+                            {t("test:" + TestData[i].answer1[0])}
                         </button> }
                     { vidSource ? 
                         <motion.button
                             className={styles.Answer}
                             animate={answer == 2 ? {backgroundColor: 'white', color: TestData[i].bgColor} : null}
                             transition={{duration: 1}}>
-                            {TestData[i].answer2[0]}
+                            {/* {TestData[i].answer2[0]} */}
+                            {t("test:" + TestData[i].answer2[0])}
                         </motion.button> :
                         <button
                             className={styles.Answer}
@@ -192,7 +199,8 @@ export default function Test() {
                                 setAnswer(2)
                                 setScore(score + TestData[i].answer2[1])
                                 setVidSource(TestData[i].answer2[2])}}>
-                            {TestData[i].answer2[0]}
+                            {/* {TestData[i].answer2[0]} */}
+                            {t("test:" + TestData[i].answer2[0])}
                         </button> }
                 </motion.div>}
             </motion.div>

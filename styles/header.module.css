@@ -8,3 +8,11 @@
   font-size: 0.9rem;
   z-index: 10;
 }
+.Header a {min-width: 8rem;}
+.Header a:last-child {text-align: right;}
+.flag {
+  font-size: 4rem;
+  /* line-height: 2rem; */
+  padding:0 0.5rem;
+  /* padding-right: 1rem; */
+}

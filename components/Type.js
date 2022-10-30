@@ -75,12 +75,15 @@ export default function Type({id}) {
                 </div>
                 <div style={{color: type.bgColor}} className={styles.DownloadBox}>
                     <p><a href={`/${type.id}Download.zip`} download>Download</a> your Creative Type</p>
-                    <p>Share your Creative Type using <b>#mycreativetype</b></p>
-                    <a href={`https://twitter.com/intent/tweet?hashtags=nextjs%2Cmycreativetype&text=${type.tweetText} Take the quiz to discover your type.&via=keyhansa1&url=https%3A%2F%2Fkeyhansa.ir`}>
+                    <p>Share your NMPD profile using <b>#NewMediaProductionDesignSait</b></p>
+                    <a href={`https://twitter.com/intent/tweet?hashtags=NewMediaProductionDesign&text=${type.tweetText} Take the quiz to discover your profile.&via=keyhansa1&url=https%3A%2F%2Fkeyhansa.ir`}>
                         <div className={styles.TwitterIcon} style={{backgroundColor: type.bgColor}}>
                             <SiIcons.SiTwitter />
                         </div>
                     </a>
+                    {/* <a href="http://www.facebook.com/share.php?u=sait.ca">
+                        <div>Facebook</div>
+                    </a> */}
                 </div>
             </div>
         </div>

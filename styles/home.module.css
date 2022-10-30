@@ -8,19 +8,21 @@
   width: 100%;
   transform: translate(0, -50%);
 }
-
+.LandingBanner h1 {min-height: 4rem;}
 .LandingVideo {
   width: 100%;
 }
 
 .LandingHeader {
   font-size: 1rem;
+  min-height: 3rem;
 }
 
 .LandingButton {
   border: 1px solid black;
   padding: 0.8rem 1.5rem;
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
+  height: 3rem;
 }
 
 @media screen and (min-width: 800px) {
