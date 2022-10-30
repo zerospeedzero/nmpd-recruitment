@@ -5,7 +5,7 @@ import Footer from './Footer'
 import { useRouter } from 'next/router'
 
 const Layout = ({ children }) => {
-    const router = useRouter()
+    const router = useRouter() 
     return (
         <div>
             <Head>
