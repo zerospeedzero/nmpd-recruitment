@@ -3,6 +3,18 @@ import styles from '../styles/type.module.css'
 import { useEffect, useState } from 'react'
 import * as SiIcons from 'react-icons/si'
 import {motion} from 'framer-motion'
+import {
+    FacebookShareButton,
+    FacebookIcon,
+    RedditShareButton,
+    RedditIcon,
+    WhatsappShareButton,
+    WhatsappIcon,
+    LinkedinShareButton,
+    LinkedinIcon,
+    TwitterShareButton,
+    TwitterIcon    
+  } from 'next-share';
 
 export default function Type({id}) {
     const [width, setWidth] = useState(0)
@@ -76,14 +88,29 @@ export default function Type({id}) {
                 <div style={{color: type.bgColor}} className={styles.DownloadBox}>
                     <p><a href={`/${type.id}Download.zip`} download>Download</a> your Creative Type</p>
                     <p>Share your NMPD profile using <b>#NewMediaProductionDesignSait</b></p>
-                    <a href={`https://twitter.com/intent/tweet?hashtags=NewMediaProductionDesign&text=${type.tweetText} Take the quiz to discover your profile.&via=keyhansa1&url=https%3A%2F%2Fkeyhansa.ir`}>
+                    {/* <a href={`https://twitter.com/intent/tweet?hashtags=NewMediaProductionDesign&text=${type.tweetText} Take the quiz to discover your profile.&via=keyhansa1&url=https%3A%2F%2Fkeyhansa.ir`}>
                         <div className={styles.TwitterIcon} style={{backgroundColor: type.bgColor}}>
                             <SiIcons.SiTwitter />
                         </div>
-                    </a>
-                    {/* <a href="http://www.facebook.com/share.php?u=sait.ca">
-                        <div>Facebook</div>
                     </a> */}
+                    <div className={styles.SocialMedia}>
+                        <FacebookShareButton
+                            url={'https://nmpd-recruitment.azurewebsites.net/'} title="NMPD recruitment">
+                            <FacebookIcon size={40} round />
+                        </FacebookShareButton>
+                        <RedditShareButton
+                            url={'https://nmpd-recruitment.azurewebsites.net/'} title="NMPD recruitment">
+                            <RedditIcon size={40} round />
+                        </RedditShareButton>
+                        <WhatsappShareButton
+                            url={'https://nmpd-recruitment.azurewebsites.net/'} title="NMPD recruitment">
+                            <WhatsappIcon size={40} round />
+                        </WhatsappShareButton>
+                        <LinkedinShareButton
+                            url={'https://nmpd-recruitment.azurewebsites.net/'} title="NMPD recruitment">
+                            <LinkedinIcon size={40} round />
+                        </LinkedinShareButton>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,3 +1,18 @@
+.Footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  z-index: 10;
+}
+
+.Footer a {
+  padding-top: 3rem;
+}
+
 .DevLink {
   border-bottom: 2px solid #000;
 }

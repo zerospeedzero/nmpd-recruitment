@@ -45,20 +45,20 @@ export default function Header() {
                 <Link href={router.asPath} locale="en-US" >
                     <label><ReactCountryFlag className={styles.flag} countryCode="US" svg title="USA"/></label>
                 </Link>
-                <Link href={router.asPath} locale="zh-HK">
-                    <label><ReactCountryFlag className={styles.flag} countryCode="HK" svg title="Hong Kong"/></label>
-                </Link>
-                <Link href={router.asPath} locale="zh-CN">
-                    <label><ReactCountryFlag className={styles.flag} countryCode="CN" svg title="China"/></label>
-                </Link>
                 <Link href={router.asPath} locale="zgh-MA">
                     <label><ReactCountryFlag className={styles.flag} countryCode="MA" svg title="Morocco"/></label>
                 </Link>
                 <Link href={router.asPath} locale="es-MX">
                     <label><ReactCountryFlag className={styles.flag} countryCode="MX" svg title="Mexico"/></label>
                 </Link>
+                <Link href={router.asPath} locale="zh-HK">
+                    <label><ReactCountryFlag className={styles.flag} countryCode="HK" svg title="Hong Kong"/></label>
+                </Link>
                 <Link href={router.asPath} locale="tl-PH">
                     <label><ReactCountryFlag className={styles.flag} countryCode="PH" svg title="Philippines"/></label>
+                </Link>
+                <Link href={router.asPath} locale="zh-CN">
+                    <label><ReactCountryFlag className={styles.flag} countryCode="CN" svg title="China"/></label>
                 </Link>
             </div>
             <Link href={router.route == '/types'? '/test': '/types'} passHref>

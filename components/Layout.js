@@ -9,8 +9,8 @@ const Layout = ({ children }) => {
     return (
         <div>
             <Head>
-                <title>Next Creative Types</title>
-                <meta name="description" content="Adobe creative types made with NextJs" />
+                <title>NMPD recruitment</title>
+                <meta name="description" content="NMPD recruitment tool" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             {router.route == '/test' ? null : <Header />}

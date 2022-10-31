@@ -96,6 +96,10 @@
   border-radius: 1rem;
 }
 
+.SocialMedia button {
+  padding: 0 0.2rem !important;
+}
+
 @media screen and (min-width: 500px) {
   .Banner {
     width: 40%;
@@ -111,3 +115,4 @@
     margin: -70vh 2rem 0 2rem;
   }
 }
+

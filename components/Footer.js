@@ -8,6 +8,7 @@ import useTranslation from "next-translate/useTranslation"
 
 function Footer() {
     const router = useRouter()
+    let { t } = useTranslation()
 
     const variants = {
         initial: { y: '3rem', opacity: 0 },
@@ -34,10 +35,23 @@ function Footer() {
             initial='initial'
             animate='animate'
             style={type?{backgroundImage: `linear-gradient(rgba(255,255,255,0),${type.bgColor},${type.bgColor})`}:{}}
-            className={styles.DevDiv}>
+            className={styles.Footer}>
+            {/* <Link href={router.route == '/about'? '/test': '/about'} passHref>
+                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}">
+                    {router.route == '/about'? t("common:take_the_test"): t("common:about")}
+                </a>
+            </Link> */}
+            <Link href="/">
+                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" href="/">Back</a>
+            </Link>               
             <p style={router.route == '/' || router.route == '/about' ? null : {color:'#fff'}} className={styles.DevP}>
+                <p><small>&copy; 2022 NMPD recruitment by Banana group. All right reserved</small></p>
+
                 {/* Made with <SiIcons.SiJavascript style={router.route == '/' || router.route == '/about' ? null : {color:'#fff'}} className={styles.DevIcon} /> & lots of tea by <Link href='https://keyhansa.ir' passHref><span style={router.route == '/' || router.route == '/about' ? null : {borderBottom:'2px solid #fff'}} className={styles.DevLink}>keyhansa</span></Link> */}
             </p>
+            <Link href="/">
+                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}" href="/">Share</a>
+            </Link>               
         </motion.div>
     )
 }

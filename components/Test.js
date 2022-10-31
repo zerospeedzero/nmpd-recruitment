@@ -1,6 +1,4 @@
 import { TestData } from "./TestData"
-// import { TestData } from "http://dev.saitnewmedia.ca/~gcheng/nmpd_recruitment/data/TestData.js"
-
 import { useState, useEffect } from "react"
 import styles from '../styles/test.module.css'
 import { useRouter } from 'next/router'
@@ -57,7 +55,7 @@ export default function Test() {
         }
     }, [vidSource])
     
-    if (i == 6 ) {
+    if (i == 2 ) {
         if ( intel < 5 ) {
             if ( dream < 5 ) {
                 if ( extro < 5) {

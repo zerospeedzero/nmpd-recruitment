@@ -1,0 +1,11 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YLRCC1SVEB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YLRCC1SVEB');
+</script>
+
+https://mariestarck.com/add-google-analytics-to-your-next-js-application-in-5-easy-steps/
