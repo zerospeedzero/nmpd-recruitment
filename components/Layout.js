@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
             <main className={styles.main}>
                 {children}
             </main>
-            {router.route !== '/types' ? <Footer /> : null}
+            {router.route !== '/types' ? <Footer /> : null} 
         </div>
     )
 }
