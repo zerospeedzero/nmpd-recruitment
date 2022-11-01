@@ -34,7 +34,7 @@ export const TypesData = [
     },
     {
         id: 'ds',
-        title: 'Digital signage specialist',
+        title: 'dstitle',
         tagline: 'dstagline',
         bgColor: '#4b9d81',
         creativeStrength: 'dscreativeStrength',
