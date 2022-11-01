@@ -1,8 +1,11 @@
 {
-  "greeting": "Welcome to NMPD recruitment page!",
+  "greeting": "Welcome",
   "about": "About",
   "discover": "Discover your creative profile",
   "start_test": "Start test",
   "the_types": "Your talent",
-  "take_the_test": "Take the Test"
+  "take_the_test": "Take the Test",
+  "creative_strengths": "Creative Strengths",
+  "untapped_potential": "Untapped Potential",
+  "ideal_collaborator": "Ideal Collaborator"
 }

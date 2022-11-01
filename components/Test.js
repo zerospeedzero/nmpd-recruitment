@@ -59,29 +59,29 @@ export default function Test() {
         if ( intel < 5 ) {
             if ( dream < 5 ) {
                 if ( extro < 5) {
-                    router.push('/types/artist')
+                    router.push('/types/gd')
                 } else {
-                    router.push('/types/adventurer')
+                    router.push('/types/gd')
                 }
             } else {
                 if ( extro < 5 ) {
-                    router.push('/types/dreamer')
+                    router.push('/types/gd')
                 } else {
-                    router.push('/types/visionary')
+                    router.push('/types/gd')
                 }
             }
         } else {
             if ( dream < 5 ) {
                 if ( extro < 5 ) {
-                    router.push('/types/maker')
+                    router.push('/types/gd')
                 } else {
-                    router.push('/types/producer')
+                    router.push('/types/gd')
                 }
             } else {
                 if ( extro < 5 ) {
-                    router.push('/types/thinker')
+                    router.push('/types/gd')
                 } else {
-                    router.push('/types/innovator')
+                    router.push('/types/gd')
                 }
             }
         }

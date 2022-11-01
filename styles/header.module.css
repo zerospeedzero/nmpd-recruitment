@@ -16,3 +16,11 @@
   padding:0 0.5rem;
   /* padding-right: 1rem; */
 }
+
+@media screen and (max-width: 660px ) {
+  .flag {font-size: 2.5rem; padding: 0 0.2rem;}
+}
+
+@media screen and (max-width: 390px ) {
+  .flag {font-size: 2rem; padding: 0 0.1rem;}
+}

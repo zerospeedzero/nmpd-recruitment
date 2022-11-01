@@ -3,6 +3,7 @@ import styles from '../styles/type.module.css'
 import { useEffect, useState } from 'react'
 import * as SiIcons from 'react-icons/si'
 import {motion} from 'framer-motion'
+import useTranslation from "next-translate/useTranslation"
 import {
     FacebookShareButton,
     FacebookIcon,
@@ -17,6 +18,7 @@ import {
   } from 'next-share';
 
 export default function Type({id}) {
+    let { t } = useTranslation()
     const [width, setWidth] = useState(0)
     useEffect(() => {
         setWidth(window.screen.width)
@@ -49,13 +51,15 @@ export default function Type({id}) {
                     animate={{ marginLeft: 0 }}
                     transition={{ duration: 0.8 }}
                     className={styles.Title}>
-                        {type.title}
+                        {/* {t("types:" + type.title)} */}
+                        {t("types:" + type.title)}
                     </motion.h1>
                 <motion.h2
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
                     className={styles.Tagline}>
-                        {type.tagline}
+                        {/* {type.tagline} */}
+                        {t("types:" + type.tagline)}
                     </motion.h2>
                 <motion.video
                     animate={{ marginTop: 0 }}
@@ -69,21 +73,22 @@ export default function Type({id}) {
             </div>
             <div className={styles.ParaFlex}>
                 <div className={styles.ParaBox}>
-                    <h3 style={{color: type.bgColor}} className={styles.Heading}>Creative Strengths</h3>
-                    <p className={styles.Paragraph}>{type.creativeStrength}</p>
+                    <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:creative_strengths")}</h3>
+                    <p className={styles.Paragraph}>{t("types:" + type.creativeStrength)}</p>
                 </div>
                 <div className={styles.ParaBox}>
-                    <h3 style={{color: type.bgColor}} className={styles.Heading}>Untapped Potential</h3>
-                    <p className={styles.Paragraph}>{type.untappedPotential}</p>
+                    <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:untapped_potential")}</h3>
+                    <p className={styles.Paragraph}>{t("types:" + type.untappedPotential)}</p>
                 </div>
                 <div className={styles.ParaBox}>
-                    <h3 style={{color: type.bgColor}} className={styles.Heading}>Ideal Collaborator</h3>
-                    <p className={styles.Paragraph}>{type.collabrator}</p>
+                    <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:ideal_collaborator")}</h3>
+                    <p className={styles.Paragraph}>{t("types:" + type.collabrator)}</p>
                 </div>
                 <div className={styles.ParaBox}>
-                    {type.definition.map((paragraph, index) => {
+                    {/* {type.definition.map((paragraph, index) => {
                         return <p key={index} className={styles.Paragraph}>{paragraph}</p>
-                    })}
+                    })} */}
+                    <p className={styles.Paragraph}>{t("types:" + type.definition)}</p>
                 </div>
                 <div style={{color: type.bgColor}} className={styles.DownloadBox}>
                     <p><a href={`/${type.id}Download.zip`} download>Download</a> your Creative Type</p>

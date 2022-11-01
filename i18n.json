@@ -3,6 +3,7 @@
   "defaultLocale": "en-US",
   "pages": {
     "*": ["common"],
-    "/test": ["test"]
+    "/test": ["test"],
+    "rgx:/types/*": ["types"]
   }
 }

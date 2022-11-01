@@ -1,7 +1,10 @@
 {
-  "greeting": "مرحبًا بكم في صفحة التوظيف NMPD!",
+  "greeting": "أهلا بك",
   "about": "حول",
   "discover": "اكتشف ملفك الشخصي الإبداعي",
   "start_test": "ابدأ الاختبار",
-  "the_types": "موهبتك"
+  "the_types": "موهبتك",
+  "creative_strengths": "Creative Strengths",
+  "untapped_potential": "Untapped Potential",
+  "ideal_collaborator": "Ideal Collaborator"
 }

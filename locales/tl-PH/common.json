@@ -1,7 +1,10 @@
 {
-  "greeting": "maligayang pagdating sa nmpd webpage",
+  "greeting": "maligayang pagdating",
   "about": "tungkol sa atin",
   "discover": "Tuklasin ang iyong creative profile",
   "start_test": "simulan ang pagsubok",
-  "the_types": "yung tipo"
+  "the_types": "yung tipo",
+  "creative_strengths": "Creative Strengths",
+  "untapped_potential": "Untapped Potential",
+  "ideal_collaborator": "Ideal Collaborator"
 }

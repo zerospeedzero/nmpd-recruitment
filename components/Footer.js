@@ -44,11 +44,9 @@ function Footer() {
             <Link href="/">
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" >Back</a>
             </Link>               
-            <p style={router.route == '/' || router.route == '/about' ? null : {color:'#fff'}} className={styles.DevP}>
-                <p><small>&copy; 2022 NMPD recruitment by Banana group. All right reserved</small></p>
-
-                {/* Made with <SiIcons.SiJavascript style={router.route == '/' || router.route == '/about' ? null : {color:'#fff'}} className={styles.DevIcon} /> & lots of tea by <Link href='https://keyhansa.ir' passHref><span style={router.route == '/' || router.route == '/about' ? null : {borderBottom:'2px solid #fff'}} className={styles.DevLink}>keyhansa</span></Link> */}
-            </p>
+            {/* <p style={router.route == '/' || router.route == '/about' ? null : {color:'#fff'}} className={styles.DevP}>
+                <small>&copy; 2022 NMPD recruitment by Banana group. All right reserved</small>
+            </p> */}
             <Link href="/">
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}" >Share</a>
             </Link>               

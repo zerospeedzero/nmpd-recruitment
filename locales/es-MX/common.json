@@ -1,7 +1,10 @@
 {
-  "greeting": "Bienvenido a la página de contratación de NMPD!",
+  "greeting": "bienvenidas",
   "about": "sobre",
   "discover": "Descubre tu perfil creativo",
   "start_test": "prueba de inicio",
-  "the_types": "tu talento"
+  "the_types": "tu talento",
+  "creative_strengths": "Creative Strengths",
+  "untapped_potential": "Untapped Potential",
+  "ideal_collaborator": "Ideal Collaborator"
 }
