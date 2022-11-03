@@ -128,21 +128,21 @@ export default function Test() {
                     animate={ init ? 'animate' : 'initial'}
                     transition={{duration: 1}}
                     className={styles.TextRow}>
-                    {/* <div className={styles.Question}>
+                    <div className={styles.Question}>
                         {t("test:" + TestData[i].question)}
-                    </div> */}
-                    <video src='01Destination.mp4'
+                    </div>
+                    {/* <video src='01Destination.mp4'
                         id='video'
                         className={styles.Video}
                         style={{width: '100vw', objectFit: 'cover'}}                                    
                         autoPlay
                         muted={mute}
                         onEnded={() => {
-                        // setI(i+1)
-                        // setVidSource(null)
-                        // setTime(null)
+                        setI(i+1)
+                        setVidSource(null)
+                        setTime(null)
                         }}
-                    />
+                    /> */}
                 </motion.div>}
                 { width < 500 ? <motion.div
                     variants={variants}
@@ -183,7 +183,7 @@ export default function Test() {
                             className={styles.Answer}
                             animate={answer == 1 ? {backgroundColor: 'white', color: TestData[i].bgColor} : null}
                             transition={{duration: 1}}>
-                            {/* {TestData[i].answer1[0]} */}
+                            {TestData[i].answer1[0]}
                             {t("test:" + TestData[i].answer1[0])}
                         </motion.button> :
                         <button
@@ -192,7 +192,7 @@ export default function Test() {
                                 setAnswer(1)
                                 setScore(score + TestData[i].answer1[1])
                                 setVidSource(TestData[i].answer1[2])}}>
-                            {/* {TestData[i].answer1[0]} */}
+                            {TestData[i].answer1[0]}
                             {t("test:" + TestData[i].answer1[0])}
                         </button> }
                     { vidSource ? 
@@ -200,7 +200,7 @@ export default function Test() {
                             className={styles.Answer}
                             animate={answer == 2 ? {backgroundColor: 'white', color: TestData[i].bgColor} : null}
                             transition={{duration: 1}}>
-                            {/* {TestData[i].answer2[0]} */}
+                            {TestData[i].answer2[0]}
                             {t("test:" + TestData[i].answer2[0])}
                         </motion.button> :
                         <button
@@ -209,7 +209,7 @@ export default function Test() {
                                 setAnswer(2)
                                 setScore(score + TestData[i].answer2[1])
                                 setVidSource(TestData[i].answer2[2])}}>
-                            {/* {TestData[i].answer2[0]} */}
+                            {TestData[i].answer2[0]}
                             {t("test:" + TestData[i].answer2[0])}
                         </button> }
                 </motion.div>}

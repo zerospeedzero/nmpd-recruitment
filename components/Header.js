@@ -36,11 +36,14 @@ export default function Header() {
             animate='animate'
             style={type?{backgroundImage: `linear-gradient(${type.bgColor},${type.bgColor},rgba(255,255,255,0))`}:{}}
             className={styles.Header}>
-            <Link href={router.route == '/about'? '/test': '/about'} passHref>
+            {/* <Link href={router.route == '/about'? '/test': '/about'} passHref>
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}">
                     {router.route == '/about'? `Take the Test`: t("common:about")}
                 </a>
-            </Link>
+            </Link> */}
+            <Link href="/">
+                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" >Home</a>
+            </Link>              
             <div>
                 <Link href={router.asPath} locale="en-US" >
                     <label><ReactCountryFlag className={styles.flag} countryCode="US" svg title="USA"/></label>

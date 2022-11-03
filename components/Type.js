@@ -3,6 +3,7 @@ import styles from '../styles/type.module.css'
 import { useEffect, useState } from 'react'
 import * as SiIcons from 'react-icons/si'
 import {motion} from 'framer-motion'
+import { useRouter } from 'next/router'
 import useTranslation from "next-translate/useTranslation"
 import {
     FacebookShareButton,
@@ -15,10 +16,24 @@ import {
     LinkedinIcon,
     TwitterShareButton,
     TwitterIcon    
-  } from 'next-share';
+  } from 'next-share'
+import * as gtag from "../lib/ga/gtag"
+// gtag.event({ action, category, label, value })
 
 export default function Type({id}) {
+    const router = useRouter()
     let { t } = useTranslation()
+    const test_result = {
+        action: 'generate_lead',
+        category: 'engagement',
+        label: 'test-result',
+        value: id.title
+    }
+
+    const handleEvent = () => {
+        gtag.event(myEvent)
+    }
+
     const [width, setWidth] = useState(0)
     useEffect(() => {
         setWidth(window.screen.width)
@@ -91,7 +106,7 @@ export default function Type({id}) {
                     <p className={styles.Paragraph}>{t("types:" + type.definition)}</p>
                 </div>
                 <div style={{color: type.bgColor}} className={styles.DownloadBox}>
-                    <p><a href={`/${type.id}Download.zip`} download>Download</a> your Creative Type</p>
+                    <p><a href={`/${type.id}Download.zip`} download>Download</a> your NMPD profile</p>
                     <p>Share your NMPD profile using <b>#NewMediaProductionDesignSait</b></p>
                     {/* <a href={`https://twitter.com/intent/tweet?hashtags=NewMediaProductionDesign&text=${type.tweetText} Take the quiz to discover your profile.&via=keyhansa1&url=https%3A%2F%2Fkeyhansa.ir`}>
                         <div className={styles.TwitterIcon} style={{backgroundColor: type.bgColor}}>
@@ -100,22 +115,24 @@ export default function Type({id}) {
                     </a> */}
                     <div className={styles.SocialMedia}>
                         <FacebookShareButton
-                            url={'https://nmpd-recruitment.azurewebsites.net/'} title="NMPD recruitment">
+                            // url={'https://nmpd-recruitment.azurewebsites.net/'} title="NMPD recruitment">
+                            url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath} title="NMPD recruitment">
                             <FacebookIcon size={40} round />
                         </FacebookShareButton>
                         <RedditShareButton
-                            url={'https://nmpd-recruitment.azurewebsites.net/'} title="NMPD recruitment">
+                            url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath } title="NMPD recruitment">
                             <RedditIcon size={40} round />
                         </RedditShareButton>
                         <WhatsappShareButton
-                            url={'https://nmpd-recruitment.azurewebsites.net/'} title="NMPD recruitment">
+                            url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath} title="NMPD recruitment">
                             <WhatsappIcon size={40} round />
                         </WhatsappShareButton>
                         <LinkedinShareButton
-                            url={'https://nmpd-recruitment.azurewebsites.net/'} title="NMPD recruitment">
+                            url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath} title="NMPD recruitment">
                             <LinkedinIcon size={40} round />
                         </LinkedinShareButton>
                     </div>
+                    <a className={styles.link} target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
                 </div>
             </div>
         </div>

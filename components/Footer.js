@@ -41,15 +41,20 @@ function Footer() {
                     {router.route == '/about'? t("common:take_the_test"): t("common:about")}
                 </a>
             </Link> */}
-            <Link href="/">
+            {/* <Link href="/">
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" >Back</a>
-            </Link>               
+            </Link>  */}
+            <Link href={router.route == '/'? '/about': '/about'} passHref>
+                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}">
+                    {router.route == '/about'? `Take the Test`: t("common:about")}
+                </a>
+            </Link>                          
             {/* <p style={router.route == '/' || router.route == '/about' ? null : {color:'#fff'}} className={styles.DevP}>
                 <small>&copy; 2022 NMPD recruitment by Banana group. All right reserved</small>
             </p> */}
-            <Link href="/">
+            {/* <Link href="/">
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}" >Share</a>
-            </Link>               
+            </Link>                */}
         </motion.div>
     )
 }

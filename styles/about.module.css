@@ -1,0 +1,122 @@
+.Type {
+  padding: 100vh 0.5rem 1rem 0.5rem;
+  z-index: 3;
+}
+
+.Banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  z-index: 0;
+}
+
+.Title {
+  color: white;
+  margin: 5rem 0 0 -100vw;
+  font-size: 2.9rem;
+  font-weight: 600;
+}
+
+.Tagline {
+  color: white;
+  margin: 0;
+  opacity: 0;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.Video {
+  margin-top: 100vh;
+  width: 100%;
+}
+
+.ParaFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.ParaBox {
+  border: 2px solid white;
+  margin-top: -2px;
+}
+
+.Heading {
+  background-color: white;
+  display: inline-block;
+  margin: 0 0 0 -1px;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.Paragraph {
+  color: white;
+  font-size: 18px;
+  padding: 0 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.DownloadBox {
+  background-color: white;
+  margin-bottom: 3rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.DownloadBox p {
+  font-size: 1.1rem;
+  margin-top: 0;
+  line-height: 1.5rem;
+}
+
+.DownloadBox b {
+  font-size: 1rem;
+}
+
+.DownloadBox p a {
+  border-bottom: 1px solid;
+}
+
+.TwitterIcon {
+  color: white;
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.SocialMedia button {
+  padding: 0 0.2rem !important;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 500px) {
+  .Banner {
+    width: 40%;
+  }
+
+  .Video {
+    width: 70%;
+  }
+
+  .ParaFlex {
+    width: 50%;
+    margin-top: -70vh;
+    margin: -70vh 2rem 0 2rem;
+  }
+}
+

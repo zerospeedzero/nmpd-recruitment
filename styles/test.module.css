@@ -43,7 +43,9 @@
   flex-wrap: nowrap;
   width: calc(100% + 4px);
   margin-left: -2px;
-  height: calc((100vh - 9.5rem) / 3);
+  /* height: calc((100vh - 9.5rem) / 3); */
+  height: auto;
+  min-height: 16rem;
 }
 
 .Video {
@@ -87,7 +89,8 @@
   .TextRow {
     margin-bottom: -2px;
     align-self: center;
-    width: calc(60% + 4px);
+    /* width: calc(60% + 4px); */
+    width: 100%;
     margin-left: 0;
   }
 
