@@ -132,7 +132,7 @@ export default function Type({id}) {
                             <LinkedinIcon size={40} round />
                         </LinkedinShareButton>
                     </div>
-                    <a className={styles.link} target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
+                    <a className={styles.link}  rel="noreferrer" target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
                 </div>
             </div>
         </div>

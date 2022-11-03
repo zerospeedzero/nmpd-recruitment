@@ -22,6 +22,7 @@ function MyApp({ Component, pageProps }) {
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
+        id="Google analytics"
         src={`https://www.googletagmanager.com/gtag/js?id=$process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS`}
       />
       <Script
