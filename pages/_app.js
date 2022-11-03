@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }) {
       />
       <Script
         strategy="afterInteractive"
+        id="Google analytics 2"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
