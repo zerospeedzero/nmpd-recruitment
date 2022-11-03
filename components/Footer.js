@@ -40,7 +40,7 @@ function Footer() {
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}">
                     {router.route == '/about'? t("common:take_the_test"): t("common:about")}
                 </a>
-            </Link> */}
+            </Link> */} 
             {/* <Link href="/">
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" >Back</a>
             </Link>  */}
