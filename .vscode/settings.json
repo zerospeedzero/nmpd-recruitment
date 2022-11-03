@@ -1,2 +1,4 @@
 {
+  "appService.defaultWebAppToDeploy": "/subscriptions/67071e4f-da6a-4986-9dca-df81051974d9/AppServices/subscriptions/67071e4f-da6a-4986-9dca-df81051974d9/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/nmpd-recruitment",
+  "appService.deploySubpath": "."
 }
