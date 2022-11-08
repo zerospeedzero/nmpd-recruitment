@@ -1,8 +1,20 @@
 {
-  "question1": "For traveling, you prefer..",
-  "q1_answer1": "Join tour",
-  "q1_answer2": "backpack1",
-  "question2": "For traveling1, you prefer..",
-  "q2_answer1": "Join tour1",
-  "q2_answer2": "backpack1"
+  "question1": "Would you rather spend time with...?",
+  "q1_answer1": "Friends",
+  "q1_answer2": "Alone",
+  "question2": "How do you think of yourself more?",
+  "q2_answer1": "As the soul of the party",
+  "q2_answer2": "As a silent spectator",
+  "question3": "You are on a board game night with friends. You would rather…",
+  "q3_answer1": "Being the champion",
+  "q3_answer2": "Enjoy the evening",
+  "question4": "Making decisions, you usually",
+  "q4_answer1": "Follow your heart",
+  "q4_answer2": "Think about objective information",
+  "question5": "Working on an assignment, would you prefer…?",
+  "q5_answer1": "Getting things done ASAP",
+  "q5_answer2": "Having a good quality product",
+  "question6": "What question better describes you…",
+  "q6_answer1": "What if?",
+  "q6_answer2": "How?"
 }

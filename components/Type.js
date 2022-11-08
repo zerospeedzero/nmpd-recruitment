@@ -31,8 +31,9 @@ export default function Type({id}) {
     }
 
     const handleEvent = () => {
-        gtag.event(myEvent)
+        gtag.event(test_result)
     }
+    handleEvent()
 
     const [width, setWidth] = useState(0)
     useEffect(() => {

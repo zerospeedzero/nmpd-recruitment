@@ -55,7 +55,7 @@ export default function Test() {
         }
     }, [vidSource])
     
-    if (i == 2 ) {
+    if (i == 6 ) {
         if ( intel < 5 ) {
             if ( dream < 5 ) {
                 if ( extro < 5) {
@@ -131,7 +131,7 @@ export default function Test() {
                     {/* <div className={styles.Question}>
                         {t("test:" + TestData[i].question)}
                     </div> */}
-                    <video src='01Destination.mp4'
+                    <video src={TestData[i].question_animation}
                         id='video'
                         className={styles.Video}
                         style={{width: '100vw', objectFit: 'cover'}}                                    
@@ -144,6 +144,17 @@ export default function Test() {
                         }}
                     />
                 </motion.div>}
+                { width > 500 && vidSource ? null : <motion.div
+                    variants={variants}
+                    initial='initial'
+                    animate={ init ? 'animate' : 'initial'}
+                    transition={{duration: 1}}
+                    className={styles.bottom_question}>
+                    <div className={styles.Question}>
+                        {t("test:" + TestData[i].question)}
+                    </div>
+                </motion.div>}
+
                 { width < 500 ? <motion.div
                     variants={variants}
                     initial='initial'
