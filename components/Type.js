@@ -31,7 +31,7 @@ export default function Type({id}) {
     }
 
     const handleEvent = () => {
-        gtag.event(test_result)
+        gtag.event(test_result) 
     }
     handleEvent()
 
