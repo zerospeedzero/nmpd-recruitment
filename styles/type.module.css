@@ -61,13 +61,24 @@
   /* background-color: white; */
   /* display: inline-block; */
   color: white;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   margin: 0 0 0 -1px;
   padding: 1rem;
   font-size: 1rem;
 }
+
+.profile a {
+  text-decoration: underline;
+  font-size: 18px;
+}
 .profile:hover {
   cursor: pointer;
+}
+
+.profileDescription {
+  /* padding-left: 1rem; */
+  display: block;
+  padding-top: 0.3rem;
 }
 
 .Paragraph {

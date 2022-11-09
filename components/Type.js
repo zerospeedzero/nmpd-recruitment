@@ -100,7 +100,7 @@ export default function Type({id}) {
                     <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:profiles")}</h3>
                     {/* <p className={styles.Paragraph}>{t("types:" + type.collabrator)}</p> */}
                     {type.profiles.map((profile) => (
-                        <p className={styles.profile} title={t("types:" + profile + "_description")}><a href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank">{t("types:" + profile)}</a></p>
+                        <p className={styles.profile} key={profile} title={t("types:" + profile + "_description")}><a href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank">{t("types:" + profile)}</a><span className={styles.profileDescription}>{t("types:" + profile + '_description')}</span></p>
                     ))}
                 </div>
                 <div className={styles.ParaBox}>

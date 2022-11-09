@@ -54,34 +54,37 @@ export default function Test() {
             setInterv(null)
         }
     }, [vidSource])
-    
+    console.log('Total score: ' + score);
+    console.log('intel score: ' + intel);
+    console.log('dream score: ' + dream);
+    console.log('extro score: ' + extro);
     if (i == 6 ) {
-        if ( intel < 1 ) {
-            if ( dream < 1 ) {
-                if ( extro < 1) {
+        if ( intel < 5 ) {
+            if ( dream < 5 ) {
+                if ( extro < 5) {
                     router.push('/types/pm')
                 } else {
                     router.push('/types/ad')
                 }
             } else {
-                if ( extro < 1 ) {
+                if ( extro < 5 ) {
                     router.push('/types/pm')
                 } else {
                     router.push('/types/ia')
                 }
             }
         } else {
-            if ( dream < 1 ) {
-                if ( extro < 1 ) {
+            if ( dream < 5 ) {
+                if ( extro < 5 ) {
                     router.push('/types/ad')
                 } else {
                     router.push('/types/vt')
                 }
             } else {
-                if ( extro < 1 ) {
-                    router.push('/types/ia')
-                } else {
+                if ( extro < 5 ) {
                     router.push('/types/vt')
+                } else {
+                    router.push('/types/ia')
                 }
             }
         }

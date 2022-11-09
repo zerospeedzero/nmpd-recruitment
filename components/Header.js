@@ -41,9 +41,9 @@ export default function Header() {
                     {router.route == '/about'? `Take the Test`: t("common:about")}
                 </a>
             </Link> */}
-            <Link href="/">
+            <Link href="/" passHref>
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" >Home</a>
-            </Link>              
+            </Link>
             <div>
                 <Link href={router.asPath} locale="en-US" >
                     <label><ReactCountryFlag className={styles.flag} countryCode="US" svg title="USA"/></label>
