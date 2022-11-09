@@ -57,6 +57,19 @@
   font-size: 1rem;
 }
 
+.profile {
+  /* background-color: white; */
+  /* display: inline-block; */
+  color: white;
+  text-decoration: underline;
+  margin: 0 0 0 -1px;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.profile:hover {
+  cursor: pointer;
+}
+
 .Paragraph {
   color: white;
   font-size: 18px;

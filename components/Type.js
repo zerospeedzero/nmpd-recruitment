@@ -97,8 +97,11 @@ export default function Type({id}) {
                     <p className={styles.Paragraph}>{t("types:" + type.untappedPotential)}</p>
                 </div>
                 <div className={styles.ParaBox}>
-                    <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:ideal_collaborator")}</h3>
-                    <p className={styles.Paragraph}>{t("types:" + type.collabrator)}</p>
+                    <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:profiles")}</h3>
+                    {/* <p className={styles.Paragraph}>{t("types:" + type.collabrator)}</p> */}
+                    {type.profiles.map((profile) => (
+                        <p className={styles.profile} title={t("types:" + profile + "_description")}><a href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank">{t("types:" + profile)}</a></p>
+                    ))}
                 </div>
                 <div className={styles.ParaBox}>
                     {/* {type.definition.map((paragraph, index) => {

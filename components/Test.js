@@ -56,32 +56,32 @@ export default function Test() {
     }, [vidSource])
     
     if (i == 6 ) {
-        if ( intel < 5 ) {
-            if ( dream < 5 ) {
-                if ( extro < 5) {
-                    router.push('/types/gd')
+        if ( intel < 1 ) {
+            if ( dream < 1 ) {
+                if ( extro < 1) {
+                    router.push('/types/pm')
                 } else {
-                    router.push('/types/gd')
+                    router.push('/types/ad')
                 }
             } else {
-                if ( extro < 5 ) {
-                    router.push('/types/gd')
+                if ( extro < 1 ) {
+                    router.push('/types/pm')
                 } else {
-                    router.push('/types/gd')
+                    router.push('/types/ia')
                 }
             }
         } else {
-            if ( dream < 5 ) {
-                if ( extro < 5 ) {
-                    router.push('/types/gd')
+            if ( dream < 1 ) {
+                if ( extro < 1 ) {
+                    router.push('/types/ad')
                 } else {
-                    router.push('/types/gd')
+                    router.push('/types/vt')
                 }
             } else {
-                if ( extro < 5 ) {
-                    router.push('/types/gd')
+                if ( extro < 1 ) {
+                    router.push('/types/ia')
                 } else {
-                    router.push('/types/gd')
+                    router.push('/types/vt')
                 }
             }
         }
