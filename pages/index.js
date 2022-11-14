@@ -28,7 +28,8 @@ export default function Home() {
     animate: {
         opacity: 1,
         transition: {
-            duration: 0.5
+            duration: 0.5,
+            delay: 0.5
         }
     }
   }
@@ -48,7 +49,15 @@ export default function Home() {
     <>
       <div className={styles.LandingBanner}>
         {/* <h1>{props.greeting}</h1> */}
-        <h1>{t("common:greeting")}</h1>
+        <motion.h1
+          variants={otherVariants}
+          initial='initial'
+          animate='animate'
+          className={styles.LandingHeader1}
+        >
+          {t("common:greeting")}
+        </motion.h1>
+        {/* <h1>{t("common:greeting")}</h1> */}
         <motion.video
           variants={variants}
           initial='initial'
@@ -58,18 +67,21 @@ export default function Home() {
           autoPlay
           loop
           muted />
-        <motion.h1
+        <motion.h2
           variants={otherVariants}
           initial='initial'
           animate='animate'
-          className={styles.LandingHeader}>
+          className={styles.LandingHeader2}>
           {t("common:discover")}
-        </motion.h1>
+        </motion.h2>
         <Link href='/test' passHref>
           <motion.a
             variants={otherVariants}
             initial='initial'
             animate='animate'
+            whileHover={{ scale: 1.3 }}
+            // whileTap={{ backgroundColor: 'green' }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
             className={styles.LandingButton}>
             {t("common:start_test")}
           </motion.a>

@@ -195,9 +195,9 @@ export default function Test() {
                     { vidSource ? 
                         <motion.button
                             className={styles.Answer}
+                            // whileHover={{ scale: 1.3 }}
                             animate={answer == 1 ? {backgroundColor: 'white', color: TestData[i].bgColor} : null}
                             transition={{duration: 1}}>
-                            {/* {TestData[i].answer1[0]} */}
                             {t("test:" + TestData[i].answer1[0])}
                         </motion.button> :
                         <button
@@ -206,7 +206,6 @@ export default function Test() {
                                 setAnswer(1)
                                 setScore(score + TestData[i].answer1[1])
                                 setVidSource(TestData[i].answer1[2])}}>
-                            {/* {TestData[i].answer1[0]} */}
                             {t("test:" + TestData[i].answer1[0])}
                         </button> }
                     { vidSource ? 
@@ -214,7 +213,6 @@ export default function Test() {
                             className={styles.Answer}
                             animate={answer == 2 ? {backgroundColor: 'white', color: TestData[i].bgColor} : null}
                             transition={{duration: 1}}>
-                            {/* {TestData[i].answer2[0]} */}
                             {t("test:" + TestData[i].answer2[0])}
                         </motion.button> :
                         <button
@@ -223,7 +221,6 @@ export default function Test() {
                                 setAnswer(2)
                                 setScore(score + TestData[i].answer2[1])
                                 setVidSource(TestData[i].answer2[2])}}>
-                            {/* {TestData[i].answer2[0]} */}
                             {t("test:" + TestData[i].answer2[0])}
                         </button> }
                 </motion.div>}

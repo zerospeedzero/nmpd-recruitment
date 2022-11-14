@@ -13,7 +13,12 @@
   width: 100%;
 }
 
-.LandingHeader {
+.LandingHeader1 {
+  font-size: 1.5rem;
+  height: 2rem;
+}
+
+.LandingHeader2 {
   font-size: 1rem;
   height: 2rem;
 }

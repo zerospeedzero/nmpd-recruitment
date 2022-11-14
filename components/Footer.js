@@ -45,11 +45,14 @@ function Footer() {
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" >Back</a>
             </Link>  */}
 
-            <Link href={router.route == '/'? '/about': ''} passHref>
+            {/* <Link href={router.route == '/'? '/about': ''} passHref>
                 <a style={router.route == '/' ? {color: '#fff'} : {display: 'none'}} className="{styles.Link}">
                     {router.route == '/about'? `Take the Test`: t("common:about")}
                 </a>
-            </Link> 
+            </Link>  */}
+                <a href="/" style={router.route == '/' ? {color: '#fff'} : {display: 'none'}} className="{styles.Link}">
+                    {router.route == '/about'? `Take the Test`: t("common:about")}
+                </a>
 
 
             {/* <p style={router.route == '/' || router.route == '/about' ? null : {color:'#fff'}} className={styles.DevP}>

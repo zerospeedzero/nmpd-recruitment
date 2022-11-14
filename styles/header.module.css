@@ -17,10 +17,16 @@
   /* padding-right: 1rem; */
 }
 
+.flag:hover {
+  font-size: 5rem;
+  margin: -1rem -0.5rem -1rem -0.5rem;
+}
 @media screen and (max-width: 660px ) {
   .flag {font-size: 2.5rem; padding: 0 0.2rem;}
+  .flag:hover {font-size:2.5rem; margin: 0;}
 }
 
 @media screen and (max-width: 390px ) {
   .flag {font-size: 2rem; padding: 0 0.1rem;}
+  .flag:hover {font-size:2rem; margin:0;}
 }
