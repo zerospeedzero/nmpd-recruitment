@@ -33,7 +33,7 @@ export default function Type({id}) {
     // const handleEvent1 = () => {
     //     gtag.event(test_result) 
     // }
-    // handleEvent1()
+    // handleEvent1() 
     const handleEvent1 = () => {
         return true;
     }
