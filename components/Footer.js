@@ -36,11 +36,11 @@ function Footer() {
             animate='animate'
             style={type?{backgroundImage: `linear-gradient(rgba(255,255,255,0),${type.bgColor},${type.bgColor})`}:{}}
             className={styles.Footer}>
-            {/* <Link href={router.route == '/about'? '/test': '/about'} passHref>
+            { <Link href={router.route == '/about'? '/test': '/about'} passHref>
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}">
                     {router.route == '/about'? t("common:take_the_test"): t("common:about")}
                 </a>
-            </Link> */} 
+            </Link> } 
             {/* <Link href="/">
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" >Back</a>
             </Link>  */}
@@ -50,9 +50,9 @@ function Footer() {
                     {router.route == '/about'? `Take the Test`: t("common:about")}
                 </a>
             </Link>  */}
-                <a href="/" style={router.route == '/' ? {color: '#fff'} : {display: 'none'}} className="{styles.Link}">
+                {/* <a href="/" style={router.route == '/' ? {color: '#fff'} : {display: 'none'}} className="{styles.Link}">
                     {router.route == '/about'? `Take the Test`: t("common:about")}
-                </a>
+                </a> */}
 
 
             {/* <p style={router.route == '/' || router.route == '/about' ? null : {color:'#fff'}} className={styles.DevP}>
