@@ -134,10 +134,12 @@ export default function Test() {
                     {/* <div className={styles.Question}>
                         {t("test:" + TestData[i].question)}
                     </div> */}
+                    {/* Question animation */ }
                     <video src={TestData[i].question_animation}
-                        id='video'
+                        id='video1'
                         className={styles.Video}
-                        style={{width: '100vw', objectFit: 'cover'}}                                    
+                        // style={{width: '100vw', objectFit: 'cover'}}                                    
+                        style={{width: '100vw' }}                                    
                         autoPlay
                         muted={mute}
                         onEnded={() => {
@@ -150,10 +152,16 @@ export default function Test() {
                 { width > 500 && vidSource ? null : <motion.div
                     variants={variants}
                     initial='initial'
-                    animate={ init ? 'animate' : 'initial'}
-                    transition={{duration: 1}}
+                    // animate={ init ? 'animate' : 'initial'}
+                    animate={{
+                        scale: [1, 2, 2, 1, 1],
+                        rotate: [0, 0, 270, 270, 0],
+                        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                        opacity:1                     
+                    }}
+                    transition={{duration: 5}}
                     className={styles.bottom_question}>
-                    <div className={styles.Question}>
+                    <div style={{color: TestData[i].Color}} className={styles.Question}>
                         {t("test:" + TestData[i].question)}
                     </div>
                 </motion.div>}
@@ -174,7 +182,7 @@ export default function Test() {
                                         setI(i+1)
                                         setVidSource(null)
                                         setTime(null)
-                                    }} /> : null }
+                                    }} />: null }
                 </motion.div> : vidSource ? <video src={vidSource}
                                     id='video'
                                     className={styles.Video}
