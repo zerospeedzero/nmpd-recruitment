@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[904],{3904:function(e){e.exports=JSON.parse('{"question1":"For traveling, you prefer..","q1_answer1":"Join tour","q1_answer2":"backpack"}')}}]);

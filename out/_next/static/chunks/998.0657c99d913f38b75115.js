@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[998],{6998:function(e){e.exports=JSON.parse('{"question1":"\u53bb\u65c5\u884c. \u4f60\u6703\u9078\u64c7?","q1_answer1":"\u8ddf\u5718","q1_answer2":"\u5b6d\u80cc\u56ca"}')}}]);
