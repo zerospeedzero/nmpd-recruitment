@@ -17,17 +17,17 @@ export const TestData = [
     },
     {
         question: 'question3',
-        question_animation: './close_door.mp4',
-        answer1: ['q3_answer1', 1, '/clock.mp4'],
-        answer2: ['q3_answer2', -1, '/clock.mp4'],
+        question_animation: './animation3mp4',
+        answer1: ['q3_answer2', -1, '/animation3.mp4'],
+        answer2: ['q3_answer2', -1, '/animation3.mp4'],
         bgColor: 'rgb(252,186,77)',
         Color: 'white'
     },
     {
         question: 'question4',
-        question_animation: './close_door.mp4',
-        answer1: ['q4_answer1', -1, '/clock.mp4'],
-        answer2: ['q4_answer2', 1, '/clock.mp4'],
+        question_animation: './animation4.mp4',
+        answer1: ['q4_answer1', -1, '/animation4.mp4'],
+        answer2: ['q4_answer2', 1, '/animation4.mp4'],
         bgColor: 'rgb(115,164,181)',
         Color: 'white'
     },

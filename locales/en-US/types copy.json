@@ -31,9 +31,9 @@
     "gd": "Graphic designer",
     "cc": "Content creator",
     "vc": "Video creator",
-    "wd_description": "Web developer is responsible for developing website while also maintaining it and ensuring its visuals. In NMPD program, you would have a chance to learn about programming languages in Web Communications class.",
-    "gd_description": "Graphic designer creates company brand identity, user interface on website, visuals in magazines, books, etc. In NMPD program, you would have a chance to learn and design yourself in Visual Communications class.",
-    "cc_description": "Content creator creates educational and entertaining content then posts them on any kinds of channels. In NMPD program, you would have a chance to learn how to edit video and apply visual effects to your content in Visual Communications and Rich Media Communications classes.",
-    "vc_description": "Video creator produces videos that could be about a certain topic then spreads them online to archive a purpose. In NMPD, you would have a chance to learn about creating an engaging video through audios, camera techniques, visual effects, etc. in Rich Media Communications class."
+    "wd_description": "Web developer description",
+    "gd_description": "Graphic designer description",
+    "cc_description": "Content creator description",
+    "vc_description": "Video creator description"
  }
   

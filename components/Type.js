@@ -37,9 +37,6 @@ export default function Type({id}) {
     const handleEvent1 = () => {
         return true;
     }
-    const handleEvent2 = () => {
-        console.log('handleEvent2 is generated');
-    }
     const handleEvent3 = () => {
         return true;
     }
@@ -50,7 +47,11 @@ export default function Type({id}) {
         value: id.title
     }
     // const handleEvent2 = () => {
-    //     gtag.event(goto_sait) 
+    //     gtag.event(goto_sait);
+    //     console.log('handleEvent2 is generated;');  
+    // }
+    // const handleEvent2 = () => {
+    //     console.log('handleEvent2 is called')
     // }
 
     let share_social_media = {
@@ -129,7 +130,7 @@ export default function Type({id}) {
                     <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:profiles")}</h3>
                     {/* <p className={styles.Paragraph}>{t("types:" + type.collabrator)}</p> */}
                     {type.profiles.map((profile) => (
-                        <p className={styles.profile} key={profile} title={t("types:" + profile + "_description")}><a onClick={handleEvent2()} href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank" rel="noreferrer">{t("types:" + profile)}</a><span className={styles.profileDescription}>{t("types:" + profile + '_description')}</span></p>
+                        <p className={styles.profile} key={profile} title={t("types:" + profile + "_description")}><a onClick={gtag.event(goto_sait)} href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank" rel="noreferrer">{t("types:" + profile)}</a><span className={styles.profileDescription}>{t("types:" + profile + '_description')}</span></p>
                     ))}
                 </div>
                 <div className={styles.ParaBox}>
@@ -164,7 +165,7 @@ export default function Type({id}) {
                             <LinkedinIcon size={40} round />
                         </LinkedinShareButton>
                     </div>
-                    <a className={styles.link}  onClick={handleEvent2()}  rel="noreferrer" target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
+                    <a className={styles.link}  onClick={gtag.event(goto_sait)}  rel="noreferrer" target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
                 </div>
             </div>
         </div>
