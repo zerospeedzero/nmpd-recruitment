@@ -43,10 +43,11 @@ export default function Type({id}) {
         value: ''
     }
 
-    function handleEvent3(media) {
-        share_social_media.value = media;
-        // gtag.event(share_social_media);
-        console.log('Shared to ' + media);  
+    function handleEvent3(media, e) {
+        e.preventDefault();
+        share_social_media.value = media
+        gtag.event(share_social_media);
+        console.log('Shared to ' + share_social_media.value);  
     }
 
     const [width, setWidth] = useState(0)
@@ -132,19 +133,19 @@ export default function Type({id}) {
                         </div>
                     </a> */}
                     <div className={styles.SocialMedia}>
-                        <FacebookShareButton onClick={handleEvent3('Facebook')}
+                        <FacebookShareButton onClick={(e) => handleEvent3('Facebook', e)}
                             url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath} title="NMPD recruitment">
                             <FacebookIcon size={40} round />
                         </FacebookShareButton>
-                        <RedditShareButton onClick={handleEvent3('Reddit')}
+                        <RedditShareButton onClick={handleEvent3}
                             url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath } title="NMPD recruitment">
                             <RedditIcon size={40} round />
                         </RedditShareButton>
-                        <WhatsappShareButton onClick={handleEvent3('WhatsApp')}
+                        <WhatsappShareButton onClick={handleEvent3}
                             url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath} title="NMPD recruitment">
                             <WhatsappIcon size={40} round />
                         </WhatsappShareButton>
-                        <LinkedinShareButton onClick={handleEvent3('LinkedIn')}
+                        <LinkedinShareButton onClick={handleEvent3}
                             url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath} title="NMPD recruitment">
                             <LinkedinIcon size={40} round />
                         </LinkedinShareButton>
