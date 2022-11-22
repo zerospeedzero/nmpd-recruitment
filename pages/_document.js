@@ -17,7 +17,7 @@ class MyDocument extends Document {
                     <meta name="twitter:card" content="summary" />
                     <meta name="twitter:site" content="@zerospeedzero" />
                     <meta name="twitter:title" content="NMPD recruitment" />
-                    <meta property="og:title" content="New Media and Production Design in Southern Alberta Institute of Technology"/>
+                    <meta name="og:title" property="og:title" content="New Media and Production Design in Southern Alberta Institute of Technology"/>
                     <meta property="og:description" content="Making a quiz based on personality, interests, knowledge, and experience
 to find out what kind of creative artist they are. This can help us as a hook
 to match their information with the offered skills."/>

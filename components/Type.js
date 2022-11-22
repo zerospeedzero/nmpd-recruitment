@@ -134,7 +134,7 @@ export default function Type({id}) {
                     </a> */}
                     <div className={styles.SocialMedia}>
                         <FacebookShareButton onClick={(e) => handleEvent3('Facebook', e)}
-                            url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath} title="NMPD recruitment">
+                            url={'https://nmpd-recruitment.azurewebsites.net/profile_pic.png' + router.asPath} title="NMPD recruitment" quote="testing">
                             <FacebookIcon size={40} round />
                         </FacebookShareButton>
                         <RedditShareButton onClick={handleEvent3}
