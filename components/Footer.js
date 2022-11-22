@@ -36,9 +36,9 @@ function Footer() {
             animate='animate'
             style={type?{backgroundImage: `linear-gradient(rgba(255,255,255,0),${type.bgColor},${type.bgColor})`}:{}}
             className={styles.Footer}>
-            { <Link href={router.route == '/about'? '/test': '/about'} passHref>
+            { <Link href={router.route == '/'? '/about': '/about'} passHref>
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}">
-                    {router.route == '/about'? t("common:take_the_test"): t("common:about")}
+                    {router.route == '/'? t("common:about"): null}
                 </a>
             </Link> } 
             {/* <Link href="/">

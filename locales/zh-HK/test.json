@@ -1,5 +1,20 @@
 {
-  "question1": "去旅行. 你會選擇?",
-  "q1_answer1": "跟團",
-  "q1_answer2": "孭背囊"
+  "question1": "你會花時間在...?",
+  "q1_answer1": "和朋友一起",
+  "q1_answer2": "獨自一人",
+  "question2": "你覺得自己?",
+  "q2_answer1": "聚會靈魂",
+  "q2_answer2": "靜默參與者",
+  "question3": "如果你正在玩board game. 你會選擇",
+  "q3_answer1": "勝利者",
+  "q3_answer2": "享受者",
+  "question4": "作出決定時.你會選擇",
+  "q4_answer1": "由心出發",
+  "q4_answer2": "目標為本",
+  "question5": "做功課時..你會選擇?",
+  "q5_answer1": "盡快完成",
+  "q5_answer2": "完美主義",
+  "question6": "什麼最能形容你",
+  "q6_answer1": "如果",
+  "q6_answer2": "如何"
 }

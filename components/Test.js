@@ -154,8 +154,8 @@ export default function Test() {
                     initial='initial'
                     // animate={ init ? 'animate' : 'initial'}
                     animate={{
-                        scale: [1, 2, 2, 1, 1],
-                        rotate: [0, 0, 270, 270, 0],
+                        scale: [1, 1.5, 3, 1.5, 1],
+                        rotate: [0, 10, 0, -10, 0],
                         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
                         opacity:1                     
                     }}

@@ -5,7 +5,7 @@ export default function types() {
     return (
         <div className={styles.Types}>
             <div className={styles.Row}>
-                <TypeLink title='vt' bgColor='#df3e51' src='/gdSmall.mp4' />
+                <TypeLink title='vt' bgColor='#df3e51' src='/vtSmall.mp4' />
                 <TypeLink title='pm' bgColor='#a19989' src='/pmSmall.mp4' />
                 {/* <TypeLink title='Adventurer' bgColor='#da552d' src='/adventurerSmall.mp4' />
                 <TypeLink title='Maker' bgColor='#4b9d81' src='/makerSmall.mp4' /> */}
