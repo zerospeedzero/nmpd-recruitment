@@ -9,7 +9,8 @@ import ReactCountryFlag from "react-country-flag"
 export default function Header() {
     const router = useRouter()
     const forceReload = () => {
-        router.reload();
+        router.push('/');
+        // router.reload(window.location.pathname);
     }
     let { t } = useTranslation()
     // Show language selection
