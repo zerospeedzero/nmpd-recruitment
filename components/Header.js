@@ -36,7 +36,7 @@ export default function Header() {
             animate='animate'
             style={type?{backgroundImage: `linear-gradient(${type.bgColor},${type.bgColor},rgba(255,255,255,0))`}:{}}
             className={styles.Header}>
-            {/* <Link href="/" passHref> */}
+            {/* <Link href="/" passHref> */} 
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" href="/">Home</a>
             {/* </Link> */}
             <div>
