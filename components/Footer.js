@@ -38,7 +38,7 @@ function Footer() {
             className={styles.Footer}>
             { <Link href={router.route == '/'? '/about': '/about'} passHref>
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}">
-                    {router.route == '/'? t("common:about"): null}
+                    {router.route == '/'? t("common:about"): null} 
                 </a>
             </Link> } 
             {/* <Link href="/">
