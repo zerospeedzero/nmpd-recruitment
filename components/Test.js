@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import * as MdIcons from 'react-icons/md'
 import useTranslation from "next-translate/useTranslation"
+import * as gtag from "../lib/ga/gtag"
 
 export default function Test() {
     const router = useRouter()
@@ -33,6 +34,18 @@ export default function Test() {
                 duration: 1
             }
         }
+    }
+    let doing_test = {
+        action: 'doing_test',
+        category: 'engagement',
+        label: 'doing_test',
+        value: ''
+    }
+    function handleEvent1(question_no) {
+        // e.preventDefault();
+        doing_test.value = question_no;
+        gtag.event(doing_test);
+        console.log('Google analytics event is generated;');  
     }
 
     var intel = score % 10
@@ -211,6 +224,7 @@ export default function Test() {
                         <button
                             className={styles.Answer}
                             onClick={() => {
+                                handleEvent1(TestData[i].question)
                                 setAnswer(1)
                                 setScore(score + TestData[i].answer1[1])
                                 setVidSource(TestData[i].answer1[2])}}>
@@ -226,6 +240,7 @@ export default function Test() {
                         <button
                             className={styles.Answer}
                             onClick={() => {
+                                handleEvent1(TestData[i].question)
                                 setAnswer(2)
                                 setScore(score + TestData[i].answer2[1])
                                 setVidSource(TestData[i].answer2[2])}}>

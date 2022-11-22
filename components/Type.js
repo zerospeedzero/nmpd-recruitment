@@ -24,22 +24,6 @@ export default function Type({id}) {
     const router = useRouter()
     let { t } = useTranslation()
     
-    const test_result = {
-        action: 'generate_lead',
-        category: 'engagement',
-        label: 'test-result',
-        value: id.title
-    }
-    // const handleEvent1 = () => {
-    //     gtag.event(test_result) 
-    // }
-    // handleEvent1() 
-    const handleEvent1 = () => {
-        return true;
-    }
-    const handleEvent3 = () => {
-        return true;
-    }
     const goto_sait = {
         action: 'generate_lead',
         category: 'engagement',
@@ -51,20 +35,19 @@ export default function Type({id}) {
         gtag.event(goto_sait);
         console.log('handleEvent2 is generated;');  
     }
-    // const handleEvent2 = () => {
-    //     console.log('handleEvent2 is called')
-    // }
 
     let share_social_media = {
-        action: 'share',
+        action: 'share_social_media',
         category: 'engagement',
         label: 'share_social_media',
-        value: ""
+        value: ''
     }
-    // const handleEvent3 = (social_media) => {
-    //     share_social_media.value = social_media
-    //     gtag.event(share_social_media) 
-    // }
+
+    function handleEvent3(media) {
+        share_social_media.value = media;
+        // gtag.event(share_social_media);
+        console.log('Shared to ' + media);  
+    }
 
     const [width, setWidth] = useState(0)
     useEffect(() => {
