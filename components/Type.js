@@ -134,19 +134,19 @@ export default function Type({id}) {
                     </a> */}
                     <div className={styles.SocialMedia}>
                         <FacebookShareButton onClick={(e) => handleEvent3('Facebook', e)}
-                            url={'https://nmpd-recruitment.azurewebsites.net/profile_pic.png' + router.asPath} title="NMPD recruitment" quote="testing">
+                            url={'https://nmpd-recruitment.azurewebsites.net/types/' + type.id} title="NMPD recruitment">
                             <FacebookIcon size={40} round />
                         </FacebookShareButton>
-                        <RedditShareButton onClick={handleEvent3}
-                            url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath } title="NMPD recruitment">
+                        <RedditShareButton onClick={(e) => handleEvent3('Reddit', e)}
+                            url={'https://nmpd-recruitment.azurewebsites.net/types/' + type.id} title="NMPD recruitment">
                             <RedditIcon size={40} round />
                         </RedditShareButton>
-                        <WhatsappShareButton onClick={handleEvent3}
-                            url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath} title="NMPD recruitment">
+                        <WhatsappShareButton onClick={(e) => handleEvent3('WhatsApp', e)}
+                            url={'https://nmpd-recruitment.azurewebsites.net/types/' + type.id} title="NMPD recruitment">
                             <WhatsappIcon size={40} round />
                         </WhatsappShareButton>
-                        <LinkedinShareButton onClick={handleEvent3}
-                            url={'https://nmpd-recruitment.azurewebsites.net/' + router.asPath} title="NMPD recruitment">
+                        <LinkedinShareButton onClick={(e) => handleEvent3('LinkedIn', e)}
+                            url={'https://nmpd-recruitment.azurewebsites.net/types/' + type.id} title="NMPD recruitment">
                             <LinkedinIcon size={40} round />
                         </LinkedinShareButton>
                     </div>
