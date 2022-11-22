@@ -4,6 +4,7 @@ import * as SiIcons from 'react-icons/si'
 import {motion} from 'framer-motion'
 import { useRouter } from 'next/router'
 import useTranslation from "next-translate/useTranslation"
+import * as gtag from "../lib/ga/gtag"
 
 function about() {
     // const [init,setInit] = useState(false)
@@ -16,7 +17,17 @@ function about() {
             }
         }
     }
-
+    const goto_sait = {
+        action: 'generate_lead',
+        category: 'engagement',
+        label: 'goto_sait',
+        value: 'about'
+    }    
+    function handleEvent2(e) {
+        e.preventDefault();
+        gtag.event(goto_sait);
+        console.log('handleEvent2 is generated;');  
+    }
 
     return (
         <div>
@@ -77,7 +88,7 @@ function about() {
                     </tr>
                 </tbody>
             </table>
-            <p>For more information, please visit <a href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" rel="noreferrer"  target="_blank">Sait NMPD website</a></p>
+            <p>For more information, please visit <a onClick={handleEvent2} href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" rel="noreferrer"  target="_blank">Sait NMPD website</a></p>
         </motion.div>
         </div>
     )

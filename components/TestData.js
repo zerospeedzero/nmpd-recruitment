@@ -20,7 +20,7 @@ export const TestData = [
     {
         question: 'question3',
         question_animation: './animation3.mp4',
-        answer1: ['q3_answer1', -1, '/clock.mp4'],
+        answer1: ['q3_answer1', 1, '/clock.mp4'],
         answer2: ['q3_answer2', -1, '/clock.mp4'],
         bgColor: 'rgb(252,186,77)',
         Color: 'white'
