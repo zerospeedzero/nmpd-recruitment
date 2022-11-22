@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import useTranslation from "next-translate/useTranslation"
 
 function about() {
-    const [init,setInit] = useState(false)
+    // const [init,setInit] = useState(false)
     const variants = {
         initial: { opacity:0 },
         animate: {
@@ -16,23 +16,7 @@ function about() {
             }
         }
     }
-    const [width, setWidth] = useState(0)
-    useEffect(() => {
-        setWidth(window.screen.width)
-    }, [])
-    
 
-    var [scrollY, setScrollY] = useState(0)
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrollY((200-window.scrollY)/200)
-        }
-        handleScroll()
-        window.addEventListener('scroll', handleScroll)
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [scrollY])
 
     return (
         <div>
@@ -93,7 +77,7 @@ function about() {
                     </tr>
                 </tbody>
             </table>
-            <p>For more information, please visit <a href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank">Sait NMPD website</a></p>
+            <p>For more information, please visit <a href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" rel="noreferrer"  target="_blank">Sait NMPD website</a></p>
         </motion.div>
         </div>
     )
