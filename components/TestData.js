@@ -20,8 +20,8 @@ export const TestData = [
     {
         question: 'question3',
         question_animation: './animation3.mp4',
-        answer1: ['q3_answer1', 1, '/clock.mp4'],
-        answer2: ['q3_answer2', -1, '/clock.mp4'],
+        answer1: ['q3_answer1', 1, '/q3_answer1.mp4'],
+        answer2: ['q3_answer2', -1, '/q3_answer1.mp4'],
         bgColor: 'rgb(252,186,77)',
         Color: 'white'
     },
@@ -36,8 +36,8 @@ export const TestData = [
     {
         question: 'question5',
         question_animation: './animation1.mp4',
-        answer1: ['q5_answer1', -10, '/clock.mp4'],
-        answer2: ['q5_answer2', 10, '/clock.mp4'],
+        answer1: ['q5_answer1', -10, '/q5_answer1.mp4'],
+        answer2: ['q5_answer2', 10, '/q5_answer1.mp4'],
         bgColor: 'rgb(214,100,106)',
         Color: 'white'
     },
