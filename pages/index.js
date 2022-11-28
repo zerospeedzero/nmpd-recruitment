@@ -79,9 +79,9 @@ export default function Home() {
             variants={otherVariants}
             initial='initial'
             animate='animate'
-            whileHover={{ scale: 1.3 }}
+            // whileHover={{ scale: 1.3 }}
             // whileTap={{ backgroundColor: 'green' }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            // transition={{ type: "spring", stiffness: 400, damping: 10 }}
             className={styles.LandingButton}>
             {t("common:start_test")}
           </motion.a>

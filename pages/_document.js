@@ -21,7 +21,7 @@ class MyDocument extends Document {
                     <meta property="og:description" content="Making a quiz based on personality, interests, knowledge, and experience
 to find out what kind of creative artist they are. This can help us as a hook
 to match their information with the offered skills."/>
-                    <meta property="og:image" content="https://nmpd-recruitment.azurewebsites.net/profile_pic.png"/>
+                    {/* <meta property="og:image" content="https://nmpd-recruitment.azurewebsites.net/profile_pic.png"/> */}
                     {/* <meta name="twitter:image" content="https://www.mycreativetype.com/images/seo/_twitter/site-twitter.png" /> */}
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
                     {/* <script
