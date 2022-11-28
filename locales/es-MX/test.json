@@ -1,5 +1,20 @@
 {
-  "question1": "For traveling, you prefer..",
-  "q1_answer1": "Join tour",
-  "q1_answer2": "backpack"
+  "question1": "Prefieres pasar más tiempo con..?",
+  "q1_answer1": "Amigos",
+  "q1_answer2": "Contigo mismo",
+  "question2": "Como te ves más a ti mismo?",
+  "q2_answer1": "Como el alma de la fiesta",
+  "q2_answer2": "Como un espectador silencioso",
+  "question3": "Estas en una noche de juegos con tus amigos. Preferirías..",
+  "q3_answer1": "Ser el campeón de la noche",
+  "q3_answer2": "Disfrutar la velada",
+  "question4": "Tomando decisiones, normalmente...",
+  "q4_answer1": "Sigues a tu corazon",
+  "q4_answer2": "Piensas en información objetiva",
+  "question5": "Trabajando en tareas, prefieres...?",
+  "q5_answer1": "Terminar cuanto antes",
+  "q5_answer2": "Lograr la mejor calidad posible.",
+  "question6": "Que pregunta te describe mejor…",
+  "q6_answer1": "Que pasaría si?",
+  "q6_answer2": "Cómo?"
 }

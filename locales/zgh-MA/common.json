@@ -1,10 +1,12 @@
 {
-  "greeting": "أهلا بك",
+  "home": "الصفحة الرئيسية",
+  "greeting": "أهلا وسهلا",
   "about": "حول",
-  "discover": "اكتشف ملفك الشخصي الإبداعي",
+  "discover": "اختر مسار حياتك المهنية الآن!",
   "start_test": "ابدأ الاختبار",
   "the_types": "موهبتك",
-  "creative_strengths": "Creative Strengths",
-  "untapped_potential": "Untapped Potential",
-  "ideal_collaborator": "Ideal Collaborator"
+  "take_the_test": "خذ الاختبار",
+  "creative_strengths": "قدرات إبداعية",
+  "untapped_potential": "الإمكانات غير المستغلة",
+  "profiles": "مظهر"
 }

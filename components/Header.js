@@ -41,7 +41,7 @@ export default function Header() {
             style={type?{backgroundImage: `linear-gradient(${type.bgColor},${type.bgColor},rgba(255,255,255,0))`}:{}}
             className={styles.Header}>
             <Link href="/" passHref> 
-                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" onClick={forceReload}>Home</a>
+                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" onClick={forceReload}>{t("common:home")}</a>
             </Link>
             <div>
                 {/* <motion.div whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}> */}

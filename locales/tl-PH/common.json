@@ -1,10 +1,12 @@
 {
-  "greeting": "maligayang pagdating",
-  "about": "tungkol sa atin",
-  "discover": "Tuklasin ang iyong creative profile",
-  "start_test": "simulan ang pagsubok",
-  "the_types": "yung tipo",
-  "creative_strengths": "Creative Strengths",
-  "untapped_potential": "Untapped Potential",
-  "ideal_collaborator": "Ideal Collaborator"
+  "home": "Bahay",
+  "greeting": "Maligayang pagdating",
+  "about": "Tungkol sa",
+  "discover": "Piliin ang iyong career path ngayon!",
+  "start_test": "Simulan ang pagsubok",
+  "the_types": "Ang iyong talento",
+  "take_the_test": "Kumuha ng pagsusulit",
+  "creative_strengths": "Mga Malikhaing Lakas",
+  "untapped_potential": "Hindi Nagamit na Potensyal",
+  "profiles": "Mga profile"
 }

@@ -1,10 +1,12 @@
 {
-  "greeting": "欢迎来到NMPD网页",
-  "about": "关于我们",
-  "discover": "发掘您的创意",
+  "home": "主页",
+  "greeting": "欢迎",
+  "about": "关于",
+  "discover": "现在选择您的职业道路！",
   "start_test": "开始测试",
   "the_types": "你的才华",
-  "creative_strengths": "Creative Strengths",
-  "untapped_potential": "Untapped Potential",
-  "ideal_collaborator": "Ideal Collaborator"
+  "take_the_test": "参加测试",
+  "creative_strengths": "创意优势",
+  "untapped_potential": "未开发的潜力",
+  "profiles": "简介"
 }

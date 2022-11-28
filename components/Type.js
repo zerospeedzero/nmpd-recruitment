@@ -85,13 +85,12 @@ export default function Type({id}) {
                         {/* {t("types:" + type.title)} */}
                         {t("types:" + type.title)}
                     </motion.h1>
-                <motion.h2
+                {/* <motion.h2
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
                     className={styles.Tagline}>
-                        {/* {type.tagline} */}
                         {t("types:" + type.tagline)}
-                    </motion.h2>
+                    </motion.h2> */}
                 <motion.video
                     animate={{ marginTop: 0 }}
                     transition={{duration: 1, ease: 'backOut', delay: 1 }}
@@ -107,23 +106,19 @@ export default function Type({id}) {
                     <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:creative_strengths")}</h3>
                     <p className={styles.Paragraph}>{t("types:" + type.creativeStrength)}</p>
                 </div>
-                <div className={styles.ParaBox}>
+                {/* <div className={styles.ParaBox}>
                     <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:untapped_potential")}</h3>
                     <p className={styles.Paragraph}>{t("types:" + type.untappedPotential)}</p>
-                </div>
+                </div> */}
                 <div className={styles.ParaBox}>
                     <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:profiles")}</h3>
-                    {/* <p className={styles.Paragraph}>{t("types:" + type.collabrator)}</p> */}
                     {type.profiles.map((profile) => (
-                        <p className={styles.profile} key={profile} title={t("types:" + profile + "_description")}><a onClick={handleEvent2} href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank" rel="noreferrer">{t("types:" + profile)}</a><span className={styles.profileDescription}>{t("types:" + profile + '_description')}</span></p>
+                        <p className={styles.profile} key={profile} title={t("types:" + profile + "_description")}><a href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank" rel="noreferrer">{t("types:" + profile)}</a><span className={styles.profileDescription}>{t("types:" + profile + '_description')}</span></p>
                     ))}
                 </div>
-                <div className={styles.ParaBox}>
-                    {/* {type.definition.map((paragraph, index) => {
-                        return <p key={index} className={styles.Paragraph}>{paragraph}</p>
-                    })} */}
+                {/* <div className={styles.ParaBox}>
                     <p className={styles.Paragraph}>{t("types:" + type.definition)}</p>
-                </div>
+                </div> */}
                 <div style={{color: type.bgColor}} className={styles.DownloadBox}>
                     {/* <p><a href={`/${type.id}Download.zip`} download>Download</a> your NMPD profile</p> */}
                     <p>Share your NMPD profile using <b>#NewMediaProductionDesignSait</b></p>

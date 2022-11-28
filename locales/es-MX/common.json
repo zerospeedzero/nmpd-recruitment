@@ -1,10 +1,12 @@
 {
-  "greeting": "bienvenidas",
-  "about": "sobre",
-  "discover": "Descubre tu perfil creativo",
-  "start_test": "prueba de inicio",
-  "the_types": "tu talento",
-  "creative_strengths": "Creative Strengths",
-  "untapped_potential": "Untapped Potential",
-  "ideal_collaborator": "Ideal Collaborator"
+  "home": "página de inicio",
+  "greeting": "Bienvenido",
+  "about": "Acerca de",
+  "discover": "Conoce tu carrera ahora!",
+  "start_test": "Iniciar el test",
+  "the_types": "Tu talento",
+  "take_the_test": "Tomar el test",
+  "creative_strengths": "Fortalezar creativas",
+  "untapped_potential": "Potencial sin explotar",
+  "profiles": "Perfiles"
 }
