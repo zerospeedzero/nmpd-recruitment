@@ -125,7 +125,7 @@ export default function Type({id}) {
                     <p className={styles.Paragraph}>{t("types:" + type.definition)}</p>
                 </div>
                 <div style={{color: type.bgColor}} className={styles.DownloadBox}>
-                    <p><a href={`/${type.id}Download.zip`} download>Download</a> your NMPD profile</p>
+                    {/* <p><a href={`/${type.id}Download.zip`} download>Download</a> your NMPD profile</p> */}
                     <p>Share your NMPD profile using <b>#NewMediaProductionDesignSait</b></p>
                     {/* <a href={`https://twitter.com/intent/tweet?hashtags=NewMediaProductionDesign&text=${type.tweetText} Take the quiz to discover your profile.&via=keyhansa1&url=https%3A%2F%2Fkeyhansa.ir`}>
                         <div className={styles.TwitterIcon} style={{backgroundColor: type.bgColor}}>
@@ -150,7 +150,7 @@ export default function Type({id}) {
                             <LinkedinIcon size={40} round />
                         </LinkedinShareButton>
                     </div>
-                    <a className={styles.link}  onClick={handleEvent2}  rel="noreferrer" target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
+                    <a className={styles.link} rel="noreferrer" target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
                 </div>
             </div>
         </div>
