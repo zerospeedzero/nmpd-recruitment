@@ -84,13 +84,13 @@ export default function Type({id}) {
                     className={styles.Title}>
                         {/* {t("types:" + type.title)} */}
                         {t("types:" + type.title)}
-                    </motion.h1>
-                {/* <motion.h2
+                </motion.h1>
+                <motion.h2
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
                     className={styles.Tagline}>
                         {t("types:" + type.tagline)}
-                    </motion.h2> */}
+                    </motion.h2>
                 <motion.video
                     animate={{ marginTop: 0 }}
                     transition={{duration: 1, ease: 'backOut', delay: 1 }}
@@ -104,7 +104,8 @@ export default function Type({id}) {
             <div className={styles.ParaFlex}>
                 <div className={styles.ParaBox}>
                     <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:creative_strengths")}</h3>
-                    <p className={styles.Paragraph}>{t("types:" + type.creativeStrength)}</p>
+                    {/* <div className={styles.Paragraph}>{t("types:" + type.creativeStrength)}</div> */}
+                    <div className={styles.Paragraph} dangerouslySetInnerHTML={{__html: t('types:' + type.creativeStrength)}}/>
                 </div>
                 {/* <div className={styles.ParaBox}>
                     <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:untapped_potential")}</h3>
