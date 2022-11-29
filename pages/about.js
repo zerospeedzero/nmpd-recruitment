@@ -107,7 +107,7 @@ function about() {
             <h2>Funding & Scholarships</h2>
             <p>With the generous support of SAIT donors, SAIT is proud to offer over $5 million in awards to students in almost every program. Awards are available to all qualifying SAIT students in recognition of academic success, financial need, community involvement, and other areas of success and support.</p>
             <p>You are able to find the awards in the <a target="_blank" rel="noreferrer" href="https://www.sait.ca/admissions/tuition-and-financial-aid/student-awards">Student Awards Guide 2022/23</a></p>
-            <p>For more information, please visit <a target="_blank" rel="noreferrer" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" rel="noreferrer"  target="_blank">Sait NMPD website</a></p>
+            <p>For more information, please visit <a target="_blank" rel="noreferrer" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Sait NMPD website</a></p>
             <img className={styles.img} src="studentlife1.png"/>
             <h2>Making of this website</h2>
             <p>Six students of New Media Production and Design are working on the design, development and soft launch of this website using the following technologies.</p>
