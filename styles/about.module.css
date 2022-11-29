@@ -8,6 +8,10 @@
   line-height: 2;
 }
 
+.container1 ul li {
+  line-height: 1.5;
+}
+
 .table1 {
   border-collapse: collapse;
   width: 100%;
