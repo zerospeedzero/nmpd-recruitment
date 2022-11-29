@@ -1,7 +1,8 @@
 .container1 {
   margin: 7rem auto;
   width: 90vh;
-  padding: 3rem; 
+  padding: 3rem;
+  background: wheat;
 }
 .container1 p {
   line-height: 2;
@@ -34,4 +35,8 @@
 
 .container1 a {
   text-decoration: underline;
+}
+
+.img {
+  width: 100%;
 }

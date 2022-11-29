@@ -22,6 +22,10 @@
   font-size: 1rem;
   height: 2rem;
 }
+.LandingP {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
 
 .LandingButton {
   border: 1px solid black;

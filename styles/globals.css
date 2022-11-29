@@ -3,7 +3,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Raleway", sans-serif;
-  background-color: #fdfbf8;
+  background-image: url('../public/background4.png');
+  /* background-size: cover; */
+  background-repeat: repeat;
+  /* background-color: #fdfbf8; */
 }
 
 a {
@@ -13,4 +16,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.content_bg {
+  margin: 50px 0;
+  background-image: url('../public/background1.png');
+  height: 500px;
 }

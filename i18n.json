@@ -1,6 +1,9 @@
 {
   "locales": ["en-US", "zh-HK", "zh-CN", "es-MX", "zgh-MA", "tl-PH" ],
   "defaultLocale": "en-US",
+  "interpolation": {
+    "escapeValue": false
+  },
   "pages": {
     "*": ["common"],
     "/test": ["test"],

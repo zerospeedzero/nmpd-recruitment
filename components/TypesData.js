@@ -6,7 +6,7 @@ export const TypesData = [
         bgColor: '#df3e51',
         creativeStrength: 'vtcreativeStrength',
         untappedPotential: 'vtuntappedPotential',
-        profiles: ['gd', 'cc', 'vc'],
+        profiles: ['wd', 'gd', 'vc'],
         tweetText: 'vttweetText',
         definition: 'vtdefinition'
     },
@@ -17,7 +17,7 @@ export const TypesData = [
         bgColor: '#a19989',
         creativeStrength: 'pmcreativeStrength',
         untappedPotential: 'pmuntappedPotential',
-        profiles: ['wd', 'gd', 'vc'],
+        profiles: ['wd', 'vc', 'gd'],
         tweetText: 'pmtweetText',
         definition: 'pmdefinition'
     },
@@ -39,7 +39,7 @@ export const TypesData = [
         bgColor: '#4b9d81',
         creativeStrength: 'adcreativeStrength',
         untappedPotential: 'aduntappedPotential',
-        profiles: ['gd', 'cc', 'vc'],
+        profiles: ['cc', 'vc', 'gd'],
         tweetText: 'adtweetText',
         definition: 'addefinition'
     },

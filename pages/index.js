@@ -2,6 +2,7 @@ import styles from '../styles/home.module.css'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import useTranslation from "next-translate/useTranslation"
+import { SiBlackberry } from 'react-icons/si'
 // import { useRouter } from 'next/router'
 
 // export async function getStaticProps({locale}) {
@@ -21,6 +22,7 @@ import useTranslation from "next-translate/useTranslation"
 // }
 
 // export default function Home(props) {
+
 export default function Home() {
   let { t } = useTranslation()
   const variants = {
@@ -44,7 +46,6 @@ export default function Home() {
         }
     }
   }
-
   return (
     <>
       <div className={styles.LandingBanner}>
@@ -73,7 +74,7 @@ export default function Home() {
           animate='animate'
           className={styles.LandingHeader2}>
           {t("common:discover")}
-        </motion.h2>
+        </motion.h2> 
         <Link href='/test' passHref>
           <motion.a
             variants={otherVariants}
@@ -86,6 +87,13 @@ export default function Home() {
             {t("common:start_test")}
           </motion.a>
         </Link>
+        <motion.p
+          variants={otherVariants}
+          initial='initial'
+          animate='animate'
+          className={styles.LandingP}>
+          {t("common:assets")}
+        </motion.p> 
       </div>
     </>
   )

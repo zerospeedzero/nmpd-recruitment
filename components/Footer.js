@@ -40,10 +40,11 @@ function Footer() {
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null} className="{styles.Link}">
                     {router.route == '/'? t("common:about"): null} 
                 </a>
-            </Link> } 
-            {/* <Link href="/">
-                <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" >Back</a>
-            </Link>  */}
+            </Link> }
+            {/* { <a  id="assets" className="{styles.assets}">{ t("common:assets")}</a>} */}
+            {/* <Link href="/"> */}
+                {/* <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" >Back</a> */}
+            {/* </Link>  */}
 
             {/* <Link href={router.route == '/'? '/about': ''} passHref>
                 <a style={router.route == '/' ? {color: '#fff'} : {display: 'none'}} className="{styles.Link}">
