@@ -1,6 +1,6 @@
 import styles from '../styles/about.module.css'
 import { useEffect, useState } from 'react'
-import * as SiIcons from 'react-icons/si'
+// import * as SiIcons from 'react-icons/si'
 import {motion} from 'framer-motion' 
 import { useRouter } from 'next/router'
 import useTranslation from "next-translate/useTranslation"
