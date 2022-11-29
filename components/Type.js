@@ -31,7 +31,7 @@ export default function Type({id}) {
         value: id.title
     }
     function handleEvent2(e) {
-        e.preventDefault();
+        // e.preventDefault();
         gtag.event(goto_sait);
         console.log('handleEvent2 is generated;');  
     }
@@ -114,7 +114,7 @@ export default function Type({id}) {
                 <div className={styles.ParaBox}>
                     <h3 style={{color: type.bgColor}} className={styles.Heading}>{t("common:profiles")}</h3>
                     {type.profiles.map((profile) => (
-                        <p className={styles.profile} key={profile} title={t("types:" + profile + "_description")}><a onclick="handleEvent2(e); return true;" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank" rel="noreferrer">{t("types:" + profile)}</a><span className={styles.profileDescription}>{t("types:" + profile + '_description')}</span></p>
+                        <p className={styles.profile} key={profile} title={t("types:" + profile + "_description")}><a href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design" target="_blank" rel="noreferrer">{t("types:" + profile)}</a><span className={styles.profileDescription}>{t("types:" + profile + '_description')}</span></p>
                     ))}
                 </div>
                 {/* <div className={styles.ParaBox}>
@@ -146,7 +146,7 @@ export default function Type({id}) {
                             <LinkedinIcon size={40} round />
                         </LinkedinShareButton>
                     </div>
-                    <a className={styles.link} onclick="handleEvent2(e); return true;" rel="noreferrer" target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
+                    <a className={styles.link} rel="noreferrer" target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
                 </div>
             </div>
         </div>
