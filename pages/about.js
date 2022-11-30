@@ -40,7 +40,7 @@ function about() {
                     scale: [1, 1.5, 3, 1.5, 1],
                     rotate: [0, 10, 0, -10, 0],
                     borderRadius: ["5%", "5%", "5%", "5%", "10%"],
-                    opacity:1                     
+                    opacity:1
                 }}                    
                 transition={{duration: 1}}>
             <h2>About New Media and Production Design courses</h2>

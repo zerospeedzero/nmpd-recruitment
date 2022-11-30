@@ -1,6 +1,7 @@
 .container1 {
   margin: 7rem auto;
-  width: 90vh;
+  /* width: 90vh; */
+  width: 80%;
   padding: 3rem;
   background: wheat;
 }
