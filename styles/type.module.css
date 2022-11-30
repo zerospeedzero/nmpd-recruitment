@@ -131,6 +131,14 @@
   text-align: center;
   margin-top: -3rem;
 }
+
+.TypeLink {
+  padding: 3rem;
+}
+
+.TypeLink:hover {
+  cursor: pointer;
+}
 @media screen and (min-width: 500px) {
   .Banner {
     width: 40%;

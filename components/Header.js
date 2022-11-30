@@ -40,7 +40,7 @@ export default function Header() {
             animate='animate'
             style={type?{backgroundImage: `linear-gradient(${type.bgColor},${type.bgColor},rgba(255,255,255,0))`}:{}}
             className={styles.Header}>
-            <Link href="/" passHref> 
+            <Link href="/redirect.html" passHref> 
                 <a style={router.route !== '/' && router.route !== '/about' ? {color: '#fff'} : null}  className="{styles.Link}" onClick={forceReload}>{t("common:home")}</a>
             </Link>
             <div>

@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { TypesData } from './TypesData'
 import styles from '../styles/type.module.css'
 import { useEffect, useState } from 'react'
@@ -75,6 +76,10 @@ export default function Type({id}) {
     }, [scrollY])
 
     return (
+        <div>
+            <Head>
+                <meta property="og:image" content={"https://nmpd-recruitment.azurewebsites.net/" + type.title + ".png"}/>
+            </Head>
         <div className={styles.Type} style={{backgroundColor: type.bgColor}}>
             <div style={scrollY < 0 && width < 500 ? {display:'none'} : width < 500 ? { opacity: scrollY } : null}
                 className={styles.Banner}>
@@ -149,6 +154,7 @@ export default function Type({id}) {
                     <a className={styles.link} rel="noreferrer" target="_blank" href="https://www.sait.ca/programs-and-courses/diplomas/new-media-production-and-design">Visit official New Media and Production Design (SAIT)</a>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

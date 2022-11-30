@@ -12,7 +12,7 @@ function TypeLink({title, bgColor, src}) {
                     animate={{ opacity: 1, marginTop: 0}}
                     transition={{ delay: .1, duration: (Math.random()/2 + 0.5) }}
                     className={styles.Video}
-                    style={{backgroundColor: bgColor}}
+                    style={{backgroundColor: bgColor, cursor: 'pointer'}}
                     src={src}
                     autoPlay
                     muted
