@@ -11,8 +11,8 @@ export default function types() {
                 <TypeLink title='Maker' bgColor='#4b9d81' src='/makerSmall.mp4' /> */}
             </div>
             <div className={styles.Row}>
-                <TypeLink title='ia' bgColor='#3ca0a0' src='/iaSmall.mp4' />
-                <TypeLink title='ad' bgColor='#892078' src='/adSmall.mp4' />
+                <TypeLink title='ia' bgColor='#3ca0a0' src='/iaSmall.mp4'/>
+                <TypeLink title='ad' bgColor='#892078' src='/adSmall.mp4'/>
                 {/* <TypeLink title='Innovator' bgColor='#2e5096' src='/innovatorSmall.mp4' />
                 <TypeLink title='Visionary' bgColor='#fca63f' src='/visionarySmall.mp4' /> */}
             </div>
