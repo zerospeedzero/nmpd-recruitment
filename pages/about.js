@@ -39,13 +39,14 @@ function about() {
                 animate={{
                     scale: [1, 1.5, 3, 1.5, 1],
                     rotate: [0, 10, 0, -10, 0],
-                    borderRadius: ["5%", "5%", "5%", "5%", "10%"],
+                    // borderRadius: ["3%", "3%", "3%", "3%", "3%"],
                     opacity:1
                 }}                    
                 transition={{duration: 1}}>
             <h2>About New Media and Production Design courses</h2>
             <p>SAIT or Southern Alberta Institute of Technology is a university located in Alberta, Calgary, Canada. It offers many courses, including New Media Production & Design. With NMPD, you would be instructed to create and develop engaging digital content. Furthermore, you would be expected to work on project-based assignments and hands-on training.  </p>
             <p>After you graduated, you would be received an NMPD diploma and there are possible positions available for you such as graphic design, web design, corporate communications specialist, video editor, etc. </p>
+            <div className={styles.overflow}>
             <table className={styles.table1}>
                 <thead>
                 <tr>
@@ -88,6 +89,7 @@ function about() {
                     </tr>
                 </tbody>
             </table>
+            </div>
             <h2>Student life in SAIT</h2>
             <p>As SAIT student you will have many opportunities to be involved in the student community. The campus is plenty of resources and activities to help you succeed.  We have a check you should complete once you start the NMPD program.</p> 
             <ul>

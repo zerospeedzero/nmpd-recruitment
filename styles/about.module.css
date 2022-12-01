@@ -45,3 +45,11 @@
 .img {
   width: 100%;
 }
+
+.overflow {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 600px ) {
+  .container1 {width:100%; padding: 2rem; font-size: 0.6rem;}
+}
