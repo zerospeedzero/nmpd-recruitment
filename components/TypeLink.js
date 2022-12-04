@@ -16,7 +16,9 @@ function TypeLink({title, bgColor, src}) {
                     src={src}
                     autoPlay
                     muted
-                    loop
+                    playsinline="true"
+                    webkit-playsinline="true"                    
+                    // loop
                     preload='auto' />
             </Link>
             <motion.h2

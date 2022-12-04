@@ -102,8 +102,9 @@ export default function Type({id}) {
                     className={styles.Video}
                     src={`/${type.id}Small.mp4`}
                     autoPlay
+                    playsinline="true"
+                    webkit-playsinline="true"
                     muted
-                    loop
                     preload='auto' />
             </div>
             <div className={styles.ParaFlex}>
