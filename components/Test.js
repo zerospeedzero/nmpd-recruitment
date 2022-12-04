@@ -151,9 +151,12 @@ export default function Test() {
                     <video src={TestData[i].question_animation}
                         id='video1'
                         className={styles.Video}
+                        // style={{width: '100vw', objectFit: 'cover'}}                                    
                         style={{width: '100vw', objectFit: 'cover'}}                                    
                         // style={{width: '100vw' }}                                    
                         autoPlay
+                        playsinline="true"
+                        webkit-playsinline="true"
                         muted={mute}
                         onEnded={() => {
                         // setI(i+1)
